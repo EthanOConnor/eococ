@@ -1,13 +1,14 @@
 [
   {
     "id": "1978-01_02",
-    "name": "Bearing 315 — January February 1978 Volume 1 Number 1 300dpi Color Raw Scan.pdf (Vol 1)",
+    "name": "Bearing 315 — January February 1978 Volume 1 Number 1 (Vol 1)",
     "year": 1978,
     "month": 1,
     "declared_date_start": "1978-01-01",
     "declared_date_end": "1978-02-28",
     "volume": 1,
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1978-01_02 Bearing 315 January February 1978 Volume 1 Number 1 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1978-01_02 Bearing 315 January February 1978 Volume 1 Number 1.md",
@@ -31,13 +32,14 @@
   },
   {
     "id": "1978-01_12",
-    "name": "Cascade Orienteering Club Winter Schedule 1978 300dpi Color Raw Scan.pdf",
+    "name": "Cascade Orienteering Club Winter Schedule 1978",
     "year": 1978,
     "month": 1,
     "declared_date_start": "1978-01-01",
     "declared_date_end": "1978-12-31",
     "series_code": "COCWS",
-    "series_name": "Cascade Orienteering Club Winter Schedule 1978 300dpi Color Raw Scan.pdf",
+    "series_name": "Cascade Orienteering Club Winter Schedule 1978",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1978-12_01_02_COCWS Cascade Orienteering Club Winter Schedule 1978 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1978-12_01_02_COCWS Cascade Orienteering Club Winter Schedule 1978.md",
@@ -61,13 +63,14 @@
   },
   {
     "id": "1978-05",
-    "name": "Cascade Orienteering Club Newsletter — May 1978 300dpi Color Raw Scan.pdf",
+    "name": "Cascade Orienteering Club Newsletter — May 1978",
     "year": 1978,
     "month": 5,
     "declared_date_start": "1978-05-01",
     "declared_date_end": "1978-05-31",
     "series_code": "COCN",
     "series_name": "Cascade Orienteering Club Newsletter",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1978-05_COCN Cascade Orienteering Club Newsletter May 1978 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1978-05_COCN Cascade Orienteering Club Newsletter May 1978.md",
@@ -91,12 +94,13 @@
   },
   {
     "id": "1978-06",
-    "name": "Bearing 315 — June 1978 Volume I Number 3 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — June 1978 Volume I Number 3",
     "year": 1978,
     "month": 6,
     "declared_date_start": "1978-06-01",
     "declared_date_end": "1978-06-30",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1978-06 Bearing 315 June 1978 Volume I Number 3 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1978-06 Bearing 315 June 1978 Volume I Number 3.md",
@@ -120,12 +124,13 @@
   },
   {
     "id": "1978-07",
-    "name": "Bearing 315 — July 1978 Volume I Number 4 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — July 1978 Volume I Number 4",
     "year": 1978,
     "month": 7,
     "declared_date_start": "1978-07-01",
     "declared_date_end": "1978-07-31",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1978-07 Bearing 315 July 1978 Volume I Number 4 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1978-07 Bearing 315 July 1978 Volume I Number 4.md",
@@ -149,12 +154,13 @@
   },
   {
     "id": "1979-02",
-    "name": "Bearing 315 — February 1979 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — February 1979",
     "year": 1979,
     "month": 2,
     "declared_date_start": "1979-02-01",
     "declared_date_end": "1979-02-28",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1979-02 Bearing 315 February 1979 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1979-02 Bearing 315 February 1979.md",
@@ -178,12 +184,13 @@
   },
   {
     "id": "1979-03_04",
-    "name": "Bearing 315 — March April 1979 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — March April 1979",
     "year": 1979,
     "month": 3,
     "declared_date_start": "1979-03-01",
     "declared_date_end": "1979-04-30",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1979-03_04 Bearing 315 March April 1979 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1979-03_04 Bearing 315 March April 1979.md",
@@ -207,12 +214,13 @@
   },
   {
     "id": "1979-05_06",
-    "name": "Bearing 315 — May June 1979 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — May June 1979",
     "year": 1979,
     "month": 5,
     "declared_date_start": "1979-05-01",
     "declared_date_end": "1979-06-30",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1979-05_06 Bearing 315 May June 1979 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1979-05_06 Bearing 315 May June 1979.md",
@@ -236,12 +244,13 @@
   },
   {
     "id": "1979-06_07",
-    "name": "Bearing 315 — June July 1979 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — June July 1979",
     "year": 1979,
     "month": 6,
     "declared_date_start": "1979-06-01",
     "declared_date_end": "1979-07-31",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1979-06_07 Bearing 315 June July 1979 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1979-06_07 Bearing 315 June July 1979.md",
@@ -265,12 +274,13 @@
   },
   {
     "id": "1979-08_09",
-    "name": "Bearing 315 — August September 1979 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — August September 1979",
     "year": 1979,
     "month": 8,
     "declared_date_start": "1979-08-01",
     "declared_date_end": "1979-09-30",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1979-08_09 Bearing 315 August September 1979 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1979-08_09 Bearing 315 August September 1979.md",
@@ -294,12 +304,13 @@
   },
   {
     "id": "1979-10_11",
-    "name": "Bearing 315 — October November 1979 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — October November 1979",
     "year": 1979,
     "month": 10,
     "declared_date_start": "1979-10-01",
     "declared_date_end": "1979-11-30",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1979-10_11 Bearing 315 October November 1979 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1979-10_11 Bearing 315 October November 1979.md",
@@ -323,12 +334,13 @@
   },
   {
     "id": "1979-11_12",
-    "name": "Bearing 315 — November December 1979 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — November December 1979",
     "year": 1979,
     "month": 11,
     "declared_date_start": "1979-11-01",
     "declared_date_end": "1979-12-31",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1979-11_12 Bearing 315 November December 1979 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1979-11_12 Bearing 315 November December 1979.md",
@@ -352,12 +364,13 @@
   },
   {
     "id": "1980-01_02",
-    "name": "Bearing 315 — January February 1980 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — January February 1980",
     "year": 1980,
     "month": 1,
     "declared_date_start": "1980-01-01",
     "declared_date_end": "1980-02-29",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1980-01_02 Bearing 315 January February 1980 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1980-01_02 Bearing 315 January February 1980.md",
@@ -381,12 +394,13 @@
   },
   {
     "id": "1980-03_04",
-    "name": "Bearing 315 — March April 1980 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — March April 1980",
     "year": 1980,
     "month": 3,
     "declared_date_start": "1980-03-01",
     "declared_date_end": "1980-04-30",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1980-03_04 Bearing 315 March April 1980 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1980-03_04 Bearing 315 March April 1980.md",
@@ -410,12 +424,13 @@
   },
   {
     "id": "1980-04_05",
-    "name": "Bearing 315 — April May 1980 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — April May 1980",
     "year": 1980,
     "month": 4,
     "declared_date_start": "1980-04-01",
     "declared_date_end": "1980-05-31",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1980-04_05 Bearing 315 April May 1980 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1980-04_05 Bearing 315 April May 1980.md",
@@ -439,12 +454,13 @@
   },
   {
     "id": "1980-06",
-    "name": "Bearing 315 — June 1980 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — June 1980",
     "year": 1980,
     "month": 6,
     "declared_date_start": "1980-06-01",
     "declared_date_end": "1980-06-30",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1980-06 Bearing 315 June 1980 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1980-06 Bearing 315 June 1980.md",
@@ -468,12 +484,13 @@
   },
   {
     "id": "1980-07_08",
-    "name": "Bearing 315 — July August 1980 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — July August 1980",
     "year": 1980,
     "month": 7,
     "declared_date_start": "1980-07-01",
     "declared_date_end": "1980-08-31",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1980-07_08 Bearing 315 July August 1980 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1980-07_08 Bearing 315 July August 1980.md",
@@ -497,12 +514,13 @@
   },
   {
     "id": "1980-08_09",
-    "name": "Bearing 315 — August September 1980 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — August September 1980",
     "year": 1980,
     "month": 8,
     "declared_date_start": "1980-08-01",
     "declared_date_end": "1980-09-30",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1980-08_09 Bearing 315  August September 1980 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1980-08_09 Bearing 315 August September 1980.md",
@@ -526,12 +544,13 @@
   },
   {
     "id": "1980-09_10",
-    "name": "Bearing 315 — September October 1980 300dpi Color Raw Scan.pdf",
+    "name": "Bearing 315 — September October 1980",
     "year": 1980,
     "month": 9,
     "declared_date_start": "1980-09-01",
     "declared_date_end": "1980-10-31",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1980-09_10 Bearing 315 September October 1980 300dpi Color Raw Scan.pdf",
       "md": "import/transcripts/corrected/1980-09_10 Bearing 315 September October 1980.md",
@@ -555,12 +574,13 @@
   },
   {
     "id": "1980-11_12",
-    "name": "Bearing 315 — November December 1980 300dpi Color Raw Scan(1).pdf",
+    "name": "Bearing 315 — November December 1980",
     "year": 1980,
     "month": 11,
     "declared_date_start": "1980-11-01",
     "declared_date_end": "1980-12-31",
     "series_name": "Bearing 315",
+    "scan_description": "300dpi Color Raw Scan(1)",
     "files": {
       "pdf_fullsize": "import/fullsize_scans/1980-11_12 Bearing 315 November December 1980 300dpi Color Raw Scan(1).pdf",
       "md": "import/transcripts/corrected/1980-11_12 Bearing 315 November December 1980.md",

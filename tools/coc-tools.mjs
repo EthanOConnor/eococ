@@ -89,8 +89,10 @@ function parseInitial(p){
 }
 
 function parseFinalName(bn){
+  // Strip extension for stable parsing
+  const base = bn.replace(/\.[^.]+$/, '');
   // Accept optional series code after date: YYYY-MM[_MM][_MM][_<CODE>] <rest>
-  const m = bn.match(/^(?<year>\d{4})-(?<m1>\d{2})(?:_(?<m2>\d{2}))?(?:_(?<m3>\d{2}))?(?:_(?<code>[A-Za-z0-9]+))?\s+(?<rest>.*)$/);
+  const m = base.match(/^(?<year>\d{4})-(?<m1>\d{2})(?:_(?<m2>\d{2}))?(?:_(?<m3>\d{2}))?(?:_(?<code>[A-Za-z0-9]+))?\s+(?<rest>.*)$/);
   if (!m) return null;
   const year = Number(m.groups.year);
   const months = [m.groups.m1, m.groups.m2, m.groups.m3].filter(Boolean).map(x=> Number(x));
@@ -108,6 +110,30 @@ function parseFinalName(bn){
     title = rest.slice(0, mw).trim();
     textual = rest.slice(mw).trim();
   }
+  // Extract trailing scan descriptors like "300dpi Color Raw Scan" from textual or title
+  function splitScanDescriptor(s){
+    const t = (s||'').trim();
+    if (!t) return { clean: t, desc: null };
+    // Prefer capturing from number+"dpi" if present, else from "scan"
+    const mDpi = t.match(/(\b\d{2,4}\s*)?dpi.*$/i);
+    const mScan = t.match(/scan.*$/i);
+    const start = mDpi ? mDpi.index : (mScan ? mScan.index : -1);
+    if (start >= 0){
+      return {
+        clean: t.slice(0, start).replace(/[-–—_()\s]+$/,'').trim(),
+        desc: t.slice(start).trim()
+      };
+    }
+    return { clean: t, desc: null };
+  }
+  let scanDesc = null;
+  let sp = splitScanDescriptor(textual);
+  if (sp.desc){
+    textual = sp.clean; scanDesc = sp.desc;
+  } else {
+    sp = splitScanDescriptor(title);
+    if (sp.desc){ title = sp.clean; scanDesc = sp.desc; }
+  }
   if (!months?.length && textual){
     const mws = [...textual.matchAll(monthWordRe)].map(x=> monthNameToNum(x[1]));
     if (mws.length){ months.push(...mws); }
@@ -115,7 +141,7 @@ function parseFinalName(bn){
   const minMonth = months.length? Math.min(...months): null;
   const maxMonth = months.length? Math.max(...months): null;
   const id = [String(year), '-', (minMonth? pad2(minMonth): '??'), (maxMonth && maxMonth!==minMonth)? '_'+pad2(maxMonth): ''].join('');
-  return { year, months, minMonth, maxMonth, title, textual, vol, no, id, code };
+  return { year, months, minMonth, maxMonth, title, textual, vol, no, id, code, scan_description: scanDesc };
 }
 
 function expectedOrdinalFromMonths(months){
@@ -140,6 +166,7 @@ function makeIssueObject(meta, files){
     issue_number: meta.no || undefined,
     series_code: meta.code || undefined,
     series_name: meta.title || undefined,
+    scan_description: meta.scan_description || undefined,
     files,
     status: {
       scan_initial: !!files.pdf_initial,
@@ -312,11 +339,12 @@ async function migrateCommand(){
         issue_number: m.issue.issue_number,
         series_code: m.issue.series_code,
         series_name: m.issue.series_name,
+        scan_description: m.issue.scan_description,
         files: newFiles,
         status: m.issue.status || {}
       }, fm.data || {});
 
-      const updated = matter.stringify(fm.content.trimStart(), front, { language: 'yaml' });
+      const updated = matter.stringify(fm.content.trimStart(), removeUndefined(front), { language: 'yaml' });
       await fs.writeFile(dest, updated, 'utf8');
     }
   }
@@ -328,8 +356,21 @@ async function migrateCommand(){
   }
 }
 
-if (cmd === 'index') await indexCommand();
-else if (cmd === 'migrate') await migrateCommand();
+  if (cmd === 'index') await indexCommand();
+  else if (cmd === 'migrate') await migrateCommand();
+
+function removeUndefined(v){
+  if (Array.isArray(v)) return v.map(removeUndefined);
+  if (v && typeof v === 'object'){
+    const out = {};
+    for (const [k,val] of Object.entries(v)){
+      if (val === undefined) continue;
+      out[k] = removeUndefined(val);
+    }
+    return out;
+  }
+  return v;
+}
 
 async function loadConfig(p){
   if (!p){ return DEFAULT_CONFIG; }
