@@ -19,7 +19,7 @@
 
     html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); }
 
-    .toolbar { display: grid; grid-template-columns: 1fr auto auto auto auto; gap: 8px; padding: 10px 12px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); align-items: center; }
+    .toolbar { display: grid; grid-template-columns: 1fr auto 1fr auto auto auto; gap: 8px; padding: 10px 12px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); align-items: center; }
     .toolbar input[type="text"] { width: 100%; padding: 8px 10px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: var(--panel); color: var(--text); }
     .toolbar .btn { padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: #152031; color: var(--text); cursor: pointer; }
     .toolbar .btn[aria-pressed="true"] { outline: 2px solid var(--accent); }
@@ -28,10 +28,8 @@
     .split { display: flex; height: calc(100% - 58px); }
     .pane { overflow: hidden; position: relative; background: var(--panel); }
 
-    .pdfbar { position: absolute; top: 8px; left: 8px; right: 8px; display: flex; gap: 8px; z-index: 10; pointer-events: auto; }
-    .pdfbar .btn { background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.18); color: var(--text); padding: 6px 10px; border-radius: 8px; }
-    .pdfwrap { position: absolute; inset: 0; z-index: 1; pointer-events: auto; }
-    .pdfwrap iframe, .pdfwrap embed { width: 100%; height: 100%; border: 0; background: #1a2331; position: relative; z-index: 1; pointer-events: auto; }
+    .pdfwrap { position: absolute; inset: 0; }
+    .pdfwrap iframe, .pdfwrap embed { width: 100%; height: 100%; border: 0; background: #1a2331; }
 
     .mdwrap { position: absolute; inset: 0; display: grid; grid-template-rows: auto 1fr; }
     .mdtabs { display: inline-flex; gap: 6px; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03); }
@@ -46,28 +44,34 @@
     .gutter:after { content: ""; position: absolute; inset: 0; width: 6px; margin: 0 auto; background: rgba(255,255,255,0.08); border-radius: 3px; }
     .gutter.gutter-horizontal { cursor: col-resize; width: 10px; }
 
+    .pdf-controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .pdf-controls .btn-group { display: inline-flex; gap: 6px; }
+    .pdf-controls .notice { margin-left: 6px; white-space: nowrap; }
+
     a, a:visited { color: var(--accent); }
     .notice { color: var(--muted); font-size: 12px; }
   </style>
 </head>
 <body>
   <div class="toolbar">
-    <input id="mdInput" type="text" placeholder="Markdown URL (relative or absolute)" />
-    <input id="pdfInput" type="text" placeholder="PDF URL" />
-    <button id="loadBtn" class="btn">Load</button>
+    <input id="pdfInput" type="text" placeholder="PDF URL (left pane)" />
+    <div class="pdf-controls">
+      <div class="btn-group">
+        <button class="btn" id="prevPage">◀ Prev</button>
+        <button class="btn" id="nextPage">Next ▶</button>
+        <button class="btn" id="fitBtn">Fit</button>
+      </div>
+      <a id="openPdfLink" class="btn secondary" target="_blank" rel="noopener">Open PDF</a>
+      <span class="notice" id="pdfNotice"></span>
+    </div>
+    <input id="mdInput" type="text" placeholder="Markdown URL (right pane)" />
     <button id="toggleViewBtn" class="btn" aria-pressed="false" title="Toggle Rendered/Raw (R)">Rendered</button>
     <a id="openMdLink" class="btn secondary" target="_blank" rel="noopener">Open MD</a>
+    <button id="loadBtn" class="btn">Load</button>
   </div>
 
   <div id="split" class="split">
     <div id="pdfPane" class="pane">
-      <div class="pdfbar">
-        <button class="btn" id="prevPage">◀ Prev</button>
-        <button class="btn" id="nextPage">Next ▶</button>
-        <button class="btn" id="fitBtn">Fit</button>
-        <a id="openPdfLink" class="btn secondary" target="_blank" rel="noopener">Open PDF</a>
-        <span class="notice" id="pdfNotice"></span>
-      </div>
       <div class="pdfwrap">
         <iframe id="pdfFrame" title="PDF viewer"></iframe>
       </div>
