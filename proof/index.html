@@ -92,6 +92,8 @@
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.11/dist/purify.min.js"></script>
   <script>
     const $ = (s) => document.querySelector(s);
+    const markedLib = (typeof window !== "undefined" && window.marked) ? window.marked : (typeof marked !== "undefined" ? marked : null);
+    const domPurifyLib = (typeof window !== "undefined" && window.DOMPurify) ? window.DOMPurify : (typeof DOMPurify !== "undefined" ? DOMPurify : null);
     Split(["#pdfPane", "#mdPane"], { sizes: [50, 50], minSize: 200, gutterSize: 10 });
 
     const mdInput = $("#mdInput");
@@ -152,8 +154,10 @@
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const mdText = await res.text();
         raw.textContent = mdText;
-        const html = marked.parse(mdText, { mangle: false, headerIds: true, gfm: true });
-        const clean = DOMPurify.sanitize(html, { USE_PROFILES: { html: true, svg: true }, ADD_ATTR: ["target", "rel"] });
+        if (!markedLib) throw new Error("marked is not loaded");
+        if (!domPurifyLib) throw new Error("DOMPurify is not loaded");
+        const html = markedLib.parse(mdText, { mangle: false, headerIds: true, gfm: true });
+        const clean = domPurifyLib.sanitize(html, { USE_PROFILES: { html: true, svg: true }, ADD_ATTR: ["target", "rel"] });
         rendered.innerHTML = clean;
       } catch (err){
         rendered.innerHTML = `<p style="color: var(--danger)">Failed to load markdown: ${err.message}</p>`;
@@ -173,4 +177,3 @@
   </script>
 </body>
 </html>
-
