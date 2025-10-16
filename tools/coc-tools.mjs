@@ -89,11 +89,13 @@ function parseInitial(p){
 }
 
 function parseFinalName(bn){
-  const m = bn.match(/^(?<year>\d{4})-(?<m1>\d{2})(?:_(?<m2>\d{2}))?(?:_(?<m3>\d{2}))?\s+(?<rest>.*)$/);
+  // Accept optional series code after date: YYYY-MM[_MM][_MM][_<CODE>] <rest>
+  const m = bn.match(/^(?<year>\d{4})-(?<m1>\d{2})(?:_(?<m2>\d{2}))?(?:_(?<m3>\d{2}))?(?:_(?<code>[A-Za-z0-9]+))?\s+(?<rest>.*)$/);
   if (!m) return null;
   const year = Number(m.groups.year);
   const months = [m.groups.m1, m.groups.m2, m.groups.m3].filter(Boolean).map(x=> Number(x));
   const rest = m.groups.rest || '';
+  const code = m.groups.code || null;
   const volRe = /(\bVol(?:ume)?\.?\s*(?<vol>\d+)\b)/i;
   const noRe = /(\bNo(?:\.|umber)?\.?\s*(?<no>\d+)\b)/i;
   const vol = rest.match(volRe)?.groups?.vol ? Number(rest.match(volRe).groups.vol) : null;
@@ -112,8 +114,8 @@ function parseFinalName(bn){
   }
   const minMonth = months.length? Math.min(...months): null;
   const maxMonth = months.length? Math.max(...months): null;
-  const id = [year, minMonth? pad2(minMonth): '??', (maxMonth && maxMonth!==minMonth)? '_'+pad2(maxMonth): ''].join('');
-  return { year, months, minMonth, maxMonth, title, textual, vol, no, id };
+  const id = [String(year), '-', (minMonth? pad2(minMonth): '??'), (maxMonth && maxMonth!==minMonth)? '_'+pad2(maxMonth): ''].join('');
+  return { year, months, minMonth, maxMonth, title, textual, vol, no, id, code };
 }
 
 function expectedOrdinalFromMonths(months){
@@ -136,6 +138,8 @@ function makeIssueObject(meta, files){
     declared_date_end: (meta.year && meta.maxMonth)? new Date(meta.year, meta.maxMonth, 0).toISOString().slice(0,10) : undefined,
     volume: meta.vol || undefined,
     issue_number: meta.no || undefined,
+    series_code: meta.code || undefined,
+    series_name: meta.title || undefined,
     files,
     status: {
       scan_initial: !!files.pdf_initial,
@@ -306,6 +310,8 @@ async function migrateCommand(){
         declared_date_end: m.issue.declared_date_end,
         volume: m.issue.volume,
         issue_number: m.issue.issue_number,
+        series_code: m.issue.series_code,
+        series_name: m.issue.series_name,
         files: newFiles,
         status: m.issue.status || {}
       }, fm.data || {});
@@ -345,4 +351,3 @@ function deepMerge(a,b){
   }
   return b ?? a;
 }
-
