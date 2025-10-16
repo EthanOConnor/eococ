@@ -80,6 +80,30 @@ function ensureDirSync(p){ if (!fssync.existsSync(p)) fssync.mkdirSync(p, {recur
 function isPDF(p){ return /\.(pdf|PDF)$/.test(p); }
 function isMD(p){ return /\.md$/i.test(p); }
 const toPosix = (p)=> p.split(path.sep).join('/');
+const isHttpUrl = (p)=> /^https?:\/\//i.test(p);
+
+function formatFilePath(p){
+  if (!p) return p;
+  if (isHttpUrl(p)) return p;
+  let normalized = toPosix(p);
+  if (normalized.startsWith('./')) normalized = normalized.slice(2);
+  if (path.isAbsolute(p) && !normalized.startsWith('/')){
+    normalized = '/' + normalized.replace(/^[A-Za-z]:/, '').replace(/^[\/]+/, '');
+    return normalized;
+  }
+  normalized = normalized.replace(/^\/+/, '');
+  return '/' + normalized;
+}
+
+function normalizeFiles(files){
+  if (!files) return {};
+  const out = {};
+  for (const [k,v] of Object.entries(files)){
+    if (!v) continue;
+    out[k] = formatFilePath(v);
+  }
+  return out;
+}
 
 function parseInitial(p){
   const bn = path.basename(p);
@@ -281,6 +305,7 @@ function makeIssueObject(meta, files){
   const name = `${meta.title || 'Newsletter'}${meta.textual? ' — '+meta.textual: ''}${meta.vol? ` (Vol ${meta.vol}${meta.no? ` No ${meta.no}`:''})`:''}`;
   const declaredStart = meta.declared_date_start || ((meta.year && meta.minMonth)? `${meta.year}-${pad2(meta.minMonth)}-01` : undefined);
   const declaredEnd = meta.declared_date_end || ((meta.year && meta.maxMonth)? new Date(meta.year, meta.maxMonth, 0).toISOString().slice(0,10) : undefined);
+  const normalizedFiles = normalizeFiles(files);
   return {
     id: meta.id,
     name,
@@ -293,7 +318,7 @@ function makeIssueObject(meta, files){
     series_code: meta.code || undefined,
     series_name: meta.title || undefined,
     scan_description: meta.scan_description || undefined,
-    files,
+    files: normalizedFiles,
     status: {
       scan_initial: !!files.pdf_initial,
       scan_fullsize: !!files.pdf_fullsize,
@@ -343,7 +368,7 @@ async function indexCommand(){
       const full = path.join(folder, fname);
       if (fssync.existsSync(full)){
         issue.files = issue.files || {};
-        issue.files[key] = toPosix(full);
+        issue.files[key] = formatFilePath(path.relative(process.cwd(), full));
       }
     }
   }
