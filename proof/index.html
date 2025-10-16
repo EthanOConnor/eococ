@@ -19,19 +19,18 @@
 
     html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); }
 
-    .header { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 18px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .btn { padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: #152031; color: var(--text); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+    .btn.secondary { background: transparent; }
+    .btn:disabled, .btn.disabled, .btn[aria-disabled="true"] { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
+
+    .header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding: 14px 18px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); }
     .header h1 { margin: 0; font-size: 20px; font-weight: 600; }
-    .header .meta { color: var(--muted); font-size: 14px; display: flex; gap: 16px; flex-wrap: wrap; }
+    .header .meta { color: var(--muted); font-size: 14px; display: flex; gap: 16px; flex-wrap: wrap; margin-top: 6px; }
     .header .meta span { display: inline-flex; gap: 6px; align-items: center; }
     .header .meta strong { color: var(--text); }
-    .header .actions { display: inline-flex; gap: 10px; }
-    .header .btn { padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: #152031; color: var(--text); cursor: pointer; }
-    .utility { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 12px 18px; background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.06); align-items: end; }
-    .utility label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
-    .utility input[type="text"] { padding: 8px 10px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: var(--panel); color: var(--text); }
-    .utility .btn { justify-self: start; padding: 8px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: #152031; color: var(--text); cursor: pointer; }
+    .header .actions { display: inline-flex; gap: 10px; flex-wrap: wrap; }
 
-    .split { display: flex; height: calc(100% - 58px); }
+    .split { display: flex; height: calc(100% - 70px); }
     .pane { overflow: hidden; position: relative; background: var(--panel); }
 
     .pdfwrap { position: absolute; inset: 0; }
@@ -50,9 +49,17 @@
     .gutter:after { content: ""; position: absolute; inset: 0; width: 6px; margin: 0 auto; background: rgba(255,255,255,0.08); border-radius: 3px; }
     .gutter.gutter-horizontal { cursor: col-resize; width: 10px; }
 
-    .pdf-controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-    .pdf-controls .btn-group { display: inline-flex; gap: 6px; }
-    .pdf-controls .notice { margin-left: 6px; white-space: nowrap; }
+    .control-drawer { position: fixed; left: 0; right: 0; bottom: 0; background: rgba(12,18,30,0.95); border-top: 1px solid rgba(255,255,255,0.08); box-shadow: 0 -12px 28px rgba(0,0,0,0.45); transform: translateY(calc(100% - 42px)); transition: transform 0.25s ease; backdrop-filter: blur(6px); }
+    .control-drawer.open { transform: translateY(0); }
+    .drawer-handle { background: none; border: 0; color: var(--muted); width: 100%; padding: 10px; cursor: pointer; font-size: 13px; display: flex; gap: 8px; align-items: center; justify-content: center; }
+    .drawer-content { padding: 12px 18px 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; align-items: end; }
+    .drawer-content label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
+    .drawer-content input[type="text"] { padding: 8px 10px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: var(--panel); color: var(--text); }
+    .drawer-actions { display: flex; flex-direction: column; gap: 10px; }
+    .btn-group { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+    .drawer-actions .btn-group .btn { padding: 8px 12px; }
+    .drawer-actions .btn-link { display: inline-flex; gap: 6px; }
+    .drawer-actions .notice { font-size: 12px; color: var(--muted); }
 
     a, a:visited { color: var(--accent); }
     .notice { color: var(--muted); font-size: 12px; }
@@ -65,32 +72,10 @@
       <div class="meta" id="issueMeta"></div>
     </div>
     <div class="actions">
-      <a id="openDashboard" class="btn">← Dashboard</a>
+      <button id="prevIssue" class="btn secondary">← Previous</button>
+      <button id="nextIssue" class="btn secondary">Next →</button>
+      <a id="openDashboard" class="btn">Dashboard</a>
       <button id="toggleViewBtn" class="btn" aria-pressed="false" title="Toggle Rendered/Raw (R)">Rendered</button>
-    </div>
-  </div>
-
-  <div class="utility">
-    <label>
-      PDF (left)
-      <input id="pdfInput" type="text" placeholder="newsletters/1978/.../scan_fullsize.pdf" />
-    </label>
-    <label>
-      Markdown (right)
-      <input id="mdInput" type="text" placeholder="newsletters/transcripts/1978/... .md" />
-    </label>
-    <div class="pdf-controls">
-      <div class="btn-group">
-        <button class="btn" id="prevPage">◀ Prev</button>
-        <button class="btn" id="nextPage">Next ▶</button>
-        <button class="btn" id="fitBtn">Fit</button>
-      </div>
-      <span class="notice" id="pdfNotice"></span>
-    </div>
-    <div class="actions">
-      <button id="loadBtn" class="btn">Load</button>
-      <a id="openPdfLink" class="btn" target="_blank" rel="noopener">Open PDF</a>
-      <a id="openMdLink" class="btn" target="_blank" rel="noopener">Open MD</a>
     </div>
   </div>
 
@@ -115,6 +100,33 @@
     </div>
   </div>
 
+  <div id="controlDrawer" class="control-drawer">
+    <button id="drawerToggle" class="drawer-handle">Show controls ▴</button>
+    <div class="drawer-content">
+      <label>
+        PDF (left)
+        <input id="pdfInput" type="text" placeholder="newsletters/1978/.../scan_fullsize.pdf" />
+      </label>
+      <label>
+        Markdown (right)
+        <input id="mdInput" type="text" placeholder="newsletters/transcripts/1978/... .md" />
+      </label>
+      <div class="drawer-actions">
+        <div class="btn-group">
+          <button class="btn" id="prevPage">◀ Page</button>
+          <button class="btn" id="nextPage">Page ▶</button>
+          <button class="btn" id="fitBtn">Fit</button>
+        </div>
+        <div class="btn-group">
+          <button id="loadBtn" class="btn">Load</button>
+          <a id="openPdfLink" class="btn" target="_blank" rel="noopener">Open PDF</a>
+          <a id="openMdLink" class="btn" target="_blank" rel="noopener">Open MD</a>
+        </div>
+        <span class="notice" id="pdfNotice"></span>
+      </div>
+    </div>
+  </div>
+
   <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
   <script src="vendor/marked.js"></script>
   <script src="vendor/purify.min.js"></script>
@@ -125,6 +137,7 @@
     const PATH_MATCH = location.pathname.match(/^(.*)\/proof\/index\.html$/);
     const SITE_BASE = PATH_MATCH ? PATH_MATCH[1] : '';
     const BASE_URL = `${location.origin}${SITE_BASE ? SITE_BASE + '/' : '/'}`;
+    const monthName = (m)=> new Date(2000, (m||1)-1, 1).toLocaleString(undefined, { month: 'short' });
     const isAbsoluteUrl = (p)=> /^(?:[a-z]+:)?\/\//i.test(p);
     const toAbsolute = (p)=>{
       if (!p) return null;
@@ -142,6 +155,16 @@
       const cleaned = p.replace(/^\/+/, '');
       return cleaned;
     };
+    const normalizePath = (p)=>{
+      if (!p) return null;
+      try{
+        const abs = toAbsolute(p) || p;
+        const url = new URL(abs, BASE_URL);
+        return url.pathname.replace(/\/+/g,'/').replace(/\/$/,'');
+      }catch{
+        return ('/' + p.replace(/^\/+/, '')).replace(/\/+/g,'/').replace(/\/$/,'');
+      }
+    };
     Split(["#pdfPane", "#mdPane"], { sizes: [50, 50], minSize: 200, gutterSize: 10 });
 
     const mdInput = $("#mdInput");
@@ -157,6 +180,22 @@
     const tabRendered = $("#tabRendered");
     const tabRaw = $("#tabRaw");
     const toggleViewBtn = $("#toggleViewBtn");
+    const prevPageBtn = $("#prevPage");
+    const nextPageBtn = $("#nextPage");
+    const fitBtn = $("#fitBtn");
+    const prevIssueBtn = $("#prevIssue");
+    const nextIssueBtn = $("#nextIssue");
+    const issueTitleEl = $("#issueTitle");
+    const issueMetaEl = $("#issueMeta");
+    const drawer = $("#controlDrawer");
+    const drawerToggle = $("#drawerToggle");
+    pdfNotice.textContent = "No PDF selected.";
+    openPdfLink.classList.add("disabled");
+    openPdfLink.setAttribute("aria-disabled", "true");
+    openMdLink.classList.add("disabled");
+    openMdLink.setAttribute("aria-disabled", "true");
+    prevIssueBtn.disabled = true;
+    nextIssueBtn.disabled = true;
 
     const qs = new URLSearchParams(location.search);
     let current = { md: "", pdf: "", page: parseInt(qs.get("page") || "1", 10) };
@@ -168,41 +207,91 @@
     const dashboardUrl = new URL('dashboard/index.html', BASE_URL).href;
     if (openDashboardLink) openDashboardLink.href = dashboardUrl;
 
+    const issuesUrl = new URL('data/newsletters.json', BASE_URL).href;
+    let issues = [];
+    let currentIssueIndex = -1;
+
     document.addEventListener("keydown", (e) => {
       if (e.key.toLowerCase() === "r" && !e.metaKey && !e.ctrlKey) { e.preventDefault(); toggleView(); }
+      if (e.key === "ArrowLeft" && !e.metaKey && !e.ctrlKey) { e.preventDefault(); navigateIssue(-1); }
+      if (e.key === "ArrowRight" && !e.metaKey && !e.ctrlKey) { e.preventDefault(); navigateIssue(1); }
     });
     tabRendered.addEventListener("click", () => setView("rendered"));
     tabRaw.addEventListener("click", () => setView("raw"));
     toggleViewBtn.addEventListener("click", toggleView);
-    function toggleView(){ setView(view === "rendered" ? "raw" : "rendered"); }
+    drawerToggle.addEventListener("click", () => {
+      drawer.classList.toggle("open");
+      drawerToggle.textContent = drawer.classList.contains("open") ? "Hide controls ▾" : "Show controls ▴";
+    });
+
+    const updateToggleButton = () => {
+      toggleViewBtn.textContent = view === "rendered" ? "Rendered" : "Raw";
+      toggleViewBtn.setAttribute("aria-pressed", (view !== "rendered").toString());
+    };
+
     function setView(v){
       view = v;
       const isRendered = v === "rendered";
       rendered.hidden = !isRendered; raw.hidden = isRendered;
       tabRendered.setAttribute("aria-selected", isRendered);
       tabRaw.setAttribute("aria-selected", !isRendered);
-      toggleViewBtn.textContent = isRendered ? "Rendered" : "Raw";
-      toggleViewBtn.setAttribute("aria-pressed", (!isRendered).toString());
-      const url = new URL(location.href); url.searchParams.set("view", v); history.replaceState({}, "", url);
+      updateToggleButton();
+      writeUrlParams(current.md, current.pdf);
     }
+    function toggleView(){ setView(view === "rendered" ? "raw" : "rendered"); }
 
     function setPdf(url){
       current.pdf = url || "";
       const absolute = toAbsolute(url);
-      if (!absolute) { pdfFrame.removeAttribute("src"); openPdfLink.removeAttribute("href"); return; }
+      if (!absolute) {
+        pdfFrame.removeAttribute("src");
+        openPdfLink.removeAttribute("href");
+        openPdfLink.classList.add("disabled");
+        openPdfLink.setAttribute("aria-disabled", "true");
+        pdfNotice.textContent = "No PDF selected.";
+        return;
+      }
+      openPdfLink.href = absolute;
+      openPdfLink.classList.remove("disabled");
+      openPdfLink.removeAttribute("aria-disabled");
       const base = absolute.split("#")[0];
-      const pdfURL = `${base}#page=${current.page}&zoom=page-fit`;
-      pdfFrame.src = pdfURL; openPdfLink.href = absolute;
-      pdfNotice.textContent = "Tip: Open PDF in a new tab if browser controls feel cramped.";
+      const safePage = Math.max(1, current.page || 1);
+      current.page = safePage;
+      const pdfURL = `${base}#page=${safePage}&zoom=page-fit`;
+      pdfFrame.src = pdfURL;
+      pdfNotice.textContent = `Page ${safePage}. Use Page controls or open PDF in new tab for full tools.`;
     }
-    $("#prevPage").addEventListener("click", () => { if (current.page > 1) { current.page--; setPdf(current.pdf); } });
-    $("#nextPage").addEventListener("click", () => { current.page++; setPdf(current.pdf); });
-    $("#fitBtn").addEventListener("click", () => setPdf(current.pdf));
+    prevPageBtn.addEventListener("click", () => {
+      if (!current.pdf) return;
+      if (current.page > 1) {
+        current.page--;
+        setPdf(current.pdf);
+        writeUrlParams(current.md, current.pdf);
+      }
+    });
+    nextPageBtn.addEventListener("click", () => {
+      if (!current.pdf) return;
+      current.page++;
+      setPdf(current.pdf);
+      writeUrlParams(current.md, current.pdf);
+    });
+    fitBtn.addEventListener("click", () => {
+      if (!current.pdf) return;
+      setPdf(current.pdf);
+    });
 
     async function setMd(url){
       current.md = url || "";
       const absolute = toAbsolute(url);
-      openMdLink.href = absolute || "#";
+      if (absolute) {
+        openMdLink.href = absolute;
+        openMdLink.classList.remove("disabled");
+        openMdLink.removeAttribute("aria-disabled");
+      } else {
+        openMdLink.removeAttribute("href");
+        openMdLink.classList.add("disabled");
+        openMdLink.setAttribute("aria-disabled", "true");
+      }
       if (!absolute) { rendered.innerHTML = ""; raw.textContent = ""; return; }
       try {
         const res = await fetch(absolute, { cache: "no-store" });
@@ -219,16 +308,152 @@
         raw.textContent = "";
       }
     }
-    loadBtn.addEventListener("click", () => {
-      const md = mdInput.value.trim(); const pdf = pdfInput.value.trim();
-      setMd(md); setPdf(pdf);
+
+    function writeUrlParams(mdPath, pdfPath){
       const url = new URL(location.href);
-      if (md) url.searchParams.set("md", md); else url.searchParams.delete("md");
-      if (pdf) url.searchParams.set("pdf", pdf); else url.searchParams.delete("pdf");
+      if (mdPath) url.searchParams.set("md", mdPath); else url.searchParams.delete("md");
+      if (pdfPath) url.searchParams.set("pdf", pdfPath); else url.searchParams.delete("pdf");
+      if (current.page && current.page > 1) url.searchParams.set("page", String(current.page)); else url.searchParams.delete("page");
+      if (view) url.searchParams.set("view", view);
       history.replaceState({}, "", url);
+    }
+
+    const stageDone = (value)=>{
+      if (!value) return false;
+      if (typeof value === "boolean") return value;
+      if (typeof value === "object" && value.state) return value.state === "done";
+      return false;
+    };
+
+    function formatStatusIcon(done, label){
+      const symbol = done ? "✓" : "•";
+      return `${label} <strong>${symbol}</strong>`;
+    }
+
+    function updateHeader(issue){
+      if (!issue){
+        issueTitleEl.textContent = "Proofing Viewer";
+        issueMetaEl.innerHTML = '<span>No newsletter selected.</span>';
+        document.title = "COC Proofing Viewer";
+        return;
+      }
+      issueTitleEl.textContent = issue.name || `Issue ${issue.id}`;
+      document.title = `${issue.name || issue.id} — COC Proof`;
+      const parts = [];
+      if (issue.id) parts.push(`ID <strong>${issue.id}</strong>`);
+      if (issue.year){
+        const month = issue.month ? monthName(issue.month) + " " : "";
+        parts.push(`Date <strong>${month}${issue.year}</strong>`);
+      }
+      if (issue.volume) parts.push(`Volume <strong>${issue.volume}</strong>`);
+      if (issue.issue_number) parts.push(`No. <strong>${issue.issue_number}</strong>`);
+      if (issue.scan_description) parts.push(`Scan <strong>${issue.scan_description}</strong>`);
+      const status = issue.status || {};
+      const scanFull = formatStatusIcon(stageDone(status.scan_fullsize), "Fullsize");
+      const scanArch = formatStatusIcon(stageDone(status.scan_archival), "Archival");
+      parts.push(scanFull, scanArch);
+      const transcriptDone = stageDone(status.transcript_review2) || stageDone(status.transcript_review1) || stageDone(status.transcript_auto);
+      parts.push(formatStatusIcon(transcriptDone, "Transcript"));
+      issueMetaEl.innerHTML = parts.map(part => `<span>${part}</span>`).join("");
+    }
+
+    function updateNavButtons(){
+      const hasPrev = currentIssueIndex > 0;
+      const hasNext = currentIssueIndex >= 0 && currentIssueIndex < issues.length - 1;
+      prevIssueBtn.disabled = !hasPrev;
+      nextIssueBtn.disabled = !hasNext;
+    }
+
+    function bestPdfForIssue(issue){
+      if (!issue) return "";
+      const files = issue.files || {};
+      return files.pdf_fullsize || files.pdf_archival || files.pdf || files.pdf_initial || "";
+    }
+
+    function updateIssueContext(){
+      if (!issues.length){
+        currentIssueIndex = -1;
+        updateHeader(null);
+        updateNavButtons();
+        return;
+      }
+      const mdNorm = normalizePath(current.md);
+      const pdfNorm = normalizePath(current.pdf);
+      const idx = issues.findIndex(issue => {
+        const files = issue.files || {};
+        if (mdNorm && files.md && normalizePath(files.md) === mdNorm) return true;
+        const pdfCandidates = ['pdf_fullsize','pdf_archival','pdf','pdf_initial'];
+        if (pdfNorm) return pdfCandidates.some(k => files[k] && normalizePath(files[k]) === pdfNorm);
+        return false;
+      });
+      currentIssueIndex = idx;
+      const issue = idx >= 0 ? issues[idx] : null;
+      updateHeader(issue);
+      updateNavButtons();
+    }
+
+    async function loadContent(mdPath, pdfPath){
+      const trimmedMd = mdPath ? mdPath.trim() : "";
+      const trimmedPdf = pdfPath ? pdfPath.trim() : "";
+      const previousPdf = current.pdf;
+      await setMd(trimmedMd);
+      if (normalizePath(trimmedPdf) !== normalizePath(previousPdf)) current.page = 1;
+      setPdf(trimmedPdf);
+      writeUrlParams(trimmedMd, trimmedPdf);
+      updateIssueContext();
+      setView(view || "rendered");
+    }
+
+    async function loadIssueByIndex(index){
+      const issue = issues[index];
+      if (!issue) return;
+      currentIssueIndex = index;
+      const mdPath = issue.files?.md || "";
+      const pdfPath = bestPdfForIssue(issue);
+      mdInput.value = toInputValue(mdPath);
+      pdfInput.value = toInputValue(pdfPath);
+      await loadContent(mdInput.value, pdfInput.value);
+    }
+
+    async function navigateIssue(delta){
+      if (!issues.length) return;
+      const target = currentIssueIndex === -1 ? (delta > 0 ? 0 : issues.length - 1) : currentIssueIndex + delta;
+      if (target < 0 || target >= issues.length) return;
+      try {
+        await loadIssueByIndex(target);
+      } catch (err) {
+        console.error('Failed to navigate issue', err);
+      }
+    }
+
+    async function fetchIssues(){
+      try{
+        const res = await fetch(issuesUrl, { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const json = await res.json();
+        const arr = Array.isArray(json) ? json : (json.issues || []);
+        return arr.slice().sort((a,b)=> (a.id || "").localeCompare(b.id || ""));
+      }catch(err){
+        console.warn("Failed to load newsletters dataset", err);
+        return [];
+      }
+    }
+
+    loadBtn.addEventListener("click", async () => {
+      await loadContent(mdInput.value, pdfInput.value);
     });
-    if (mdParam || pdfParam){ setMd(mdParam); setPdf(pdfParam); setView(view); }
-    else { setView(view); }
+    prevIssueBtn.addEventListener("click", () => navigateIssue(-1));
+    nextIssueBtn.addEventListener("click", () => navigateIssue(1));
+
+    (async function init(){
+      issues = await fetchIssues();
+      if (mdParam || pdfParam){
+        await loadContent(mdParam, pdfParam);
+      } else {
+        updateIssueContext();
+        setView(view || "rendered");
+      }
+    })();
   </script>
 </body>
 </html>
