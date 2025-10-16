@@ -19,11 +19,17 @@
 
     html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); }
 
-    .toolbar { display: grid; grid-template-columns: 1fr auto auto 1fr auto auto auto; gap: 8px; padding: 10px 12px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); align-items: center; }
-    .toolbar input[type="text"] { width: 100%; padding: 8px 10px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: var(--panel); color: var(--text); }
-    .toolbar .btn { padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: #152031; color: var(--text); cursor: pointer; }
-    .toolbar .btn[aria-pressed="true"] { outline: 2px solid var(--accent); }
-    .toolbar .btn.secondary { background: transparent; }
+    .header { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 18px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .header h1 { margin: 0; font-size: 20px; font-weight: 600; }
+    .header .meta { color: var(--muted); font-size: 14px; display: flex; gap: 16px; flex-wrap: wrap; }
+    .header .meta span { display: inline-flex; gap: 6px; align-items: center; }
+    .header .meta strong { color: var(--text); }
+    .header .actions { display: inline-flex; gap: 10px; }
+    .header .btn { padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: #152031; color: var(--text); cursor: pointer; }
+    .utility { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 12px 18px; background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.06); align-items: end; }
+    .utility label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
+    .utility input[type="text"] { padding: 8px 10px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: var(--panel); color: var(--text); }
+    .utility .btn { justify-self: start; padding: 8px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: #152031; color: var(--text); cursor: pointer; }
 
     .split { display: flex; height: calc(100% - 58px); }
     .pane { overflow: hidden; position: relative; background: var(--panel); }
@@ -53,22 +59,39 @@
   </style>
 </head>
 <body>
-  <div class="toolbar">
-    <input id="pdfInput" type="text" placeholder="PDF URL (left pane)" />
+  <div class="header">
+    <div>
+      <h1 id="issueTitle">Proofing Viewer</h1>
+      <div class="meta" id="issueMeta"></div>
+    </div>
+    <div class="actions">
+      <a id="openDashboard" class="btn">← Dashboard</a>
+      <button id="toggleViewBtn" class="btn" aria-pressed="false" title="Toggle Rendered/Raw (R)">Rendered</button>
+    </div>
+  </div>
+
+  <div class="utility">
+    <label>
+      PDF (left)
+      <input id="pdfInput" type="text" placeholder="newsletters/1978/.../scan_fullsize.pdf" />
+    </label>
+    <label>
+      Markdown (right)
+      <input id="mdInput" type="text" placeholder="newsletters/transcripts/1978/... .md" />
+    </label>
     <div class="pdf-controls">
       <div class="btn-group">
         <button class="btn" id="prevPage">◀ Prev</button>
         <button class="btn" id="nextPage">Next ▶</button>
         <button class="btn" id="fitBtn">Fit</button>
       </div>
-      <a id="openPdfLink" class="btn secondary" target="_blank" rel="noopener">Open PDF</a>
       <span class="notice" id="pdfNotice"></span>
     </div>
-    <a id="openDashboard" class="btn secondary">Dashboard</a>
-    <input id="mdInput" type="text" placeholder="Markdown URL (right pane)" />
-    <button id="toggleViewBtn" class="btn" aria-pressed="false" title="Toggle Rendered/Raw (R)">Rendered</button>
-    <a id="openMdLink" class="btn secondary" target="_blank" rel="noopener">Open MD</a>
-    <button id="loadBtn" class="btn">Load</button>
+    <div class="actions">
+      <button id="loadBtn" class="btn">Load</button>
+      <a id="openPdfLink" class="btn" target="_blank" rel="noopener">Open PDF</a>
+      <a id="openMdLink" class="btn" target="_blank" rel="noopener">Open MD</a>
+    </div>
   </div>
 
   <div id="split" class="split">
