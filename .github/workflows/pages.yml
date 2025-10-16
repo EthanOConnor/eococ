@@ -33,6 +33,7 @@ jobs:
           if [ -d import ]; then cp -R import public/; fi
           cp index.html public/index.html
           cp 404.html public/404.html
+          cp .nojekyll public/.nojekyll
       - uses: actions/upload-pages-artifact@v4
         with:
           path: public
