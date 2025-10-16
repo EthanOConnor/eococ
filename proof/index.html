@@ -189,6 +189,7 @@
     const issueMetaEl = $("#issueMeta");
     const drawer = $("#controlDrawer");
     const drawerToggle = $("#drawerToggle");
+    let currentFrontMatter = null;
     pdfNotice.textContent = "No PDF selected.";
     openPdfLink.classList.add("disabled");
     openPdfLink.setAttribute("aria-disabled", "true");
@@ -280,6 +281,32 @@
       setPdf(current.pdf);
     });
 
+    function splitFrontMatter(mdText){
+      const match = mdText.match(/^---\s*\n([\s\S]*?)\n---\s*\n?/);
+      if (!match) return { body: mdText, front: null };
+      const body = mdText.slice(match[0].length);
+      return { body, front: match[1] };
+    }
+
+    function parseFrontMatter(front){
+      if (!front) return null;
+      const data = {};
+      const lines = front.split(/\r?\n/);
+      for (const line of lines){
+        const m = line.match(/^([A-Za-z0-9_]+):\s*(.*)$/);
+        if (!m) continue;
+        const key = m[1];
+        let value = m[2].trim();
+        if (/^['"].*['"]$/.test(value)) value = value.slice(1, -1);
+        if (["year","month","volume","issue_number"].includes(key)){
+          const num = Number(value);
+          if (!Number.isNaN(num)) value = num;
+        }
+        data[key] = value;
+      }
+      return data;
+    }
+
     async function setMd(url){
       current.md = url || "";
       const absolute = toAbsolute(url);
@@ -292,20 +319,24 @@
         openMdLink.classList.add("disabled");
         openMdLink.setAttribute("aria-disabled", "true");
       }
-      if (!absolute) { rendered.innerHTML = ""; raw.textContent = ""; return; }
+      if (!absolute) { rendered.innerHTML = ""; raw.textContent = ""; currentFrontMatter = null; return; }
       try {
         const res = await fetch(absolute, { cache: "no-store" });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const mdText = await res.text();
-        raw.textContent = mdText;
+        const { body, front } = splitFrontMatter(mdText);
+        currentFrontMatter = parseFrontMatter(front);
+        const bodyContent = body.replace(/^\s*/, "");
+        raw.textContent = bodyContent;
         if (!markedLib) throw new Error("marked is not loaded");
         if (!domPurifyLib) throw new Error("DOMPurify is not loaded");
-        const html = markedLib.parse(mdText, { mangle: false, headerIds: true, gfm: true });
+        const html = markedLib.parse(bodyContent, { mangle: false, headerIds: true, gfm: true });
         const clean = domPurifyLib.sanitize(html, { USE_PROFILES: { html: true, svg: true }, ADD_ATTR: ["target", "rel"] });
         rendered.innerHTML = clean;
       } catch (err){
         rendered.innerHTML = `<p style="color: var(--danger)">Failed to load markdown: ${err.message}</p>`;
         raw.textContent = "";
+        currentFrontMatter = null;
       }
     }
 
@@ -331,24 +362,28 @@
     }
 
     function updateHeader(issue){
-      if (!issue){
+      let meta = issue || null;
+      let status = (issue && issue.status) || {};
+      if (!meta && currentFrontMatter){
+        meta = currentFrontMatter;
+      }
+      if (!meta){
         issueTitleEl.textContent = "Proofing Viewer";
         issueMetaEl.innerHTML = '<span>No newsletter selected.</span>';
         document.title = "COC Proofing Viewer";
         return;
       }
-      issueTitleEl.textContent = issue.name || `Issue ${issue.id}`;
-      document.title = `${issue.name || issue.id} — COC Proof`;
+      issueTitleEl.textContent = meta.name || `Issue ${meta.id || ''}`.trim() || "Proofing Viewer";
+      document.title = `${meta.name || meta.id || 'Viewer'} — COC Proof`;
       const parts = [];
-      if (issue.id) parts.push(`ID <strong>${issue.id}</strong>`);
-      if (issue.year){
-        const month = issue.month ? monthName(issue.month) + " " : "";
-        parts.push(`Date <strong>${month}${issue.year}</strong>`);
+      if (meta.id) parts.push(`ID <strong>${meta.id}</strong>`);
+      if (meta.year){
+        const month = meta.month ? monthName(Number(meta.month)) + " " : "";
+        parts.push(`Date <strong>${month}${meta.year}</strong>`);
       }
-      if (issue.volume) parts.push(`Volume <strong>${issue.volume}</strong>`);
-      if (issue.issue_number) parts.push(`No. <strong>${issue.issue_number}</strong>`);
-      if (issue.scan_description) parts.push(`Scan <strong>${issue.scan_description}</strong>`);
-      const status = issue.status || {};
+      if (meta.volume) parts.push(`Volume <strong>${meta.volume}</strong>`);
+      if (meta.issue_number) parts.push(`No. <strong>${meta.issue_number}</strong>`);
+      if (meta.scan_description) parts.push(`Scan <strong>${meta.scan_description}</strong>`);
       const scanFull = formatStatusIcon(stageDone(status.scan_fullsize), "Fullsize");
       const scanArch = formatStatusIcon(stageDone(status.scan_archival), "Archival");
       parts.push(scanFull, scanArch);
