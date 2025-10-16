@@ -601,5 +601,3555 @@
         "state": "todo"
       }
     }
+  },
+  {
+    "id": "1978-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1978,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1970s/1978-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1979-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1979,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1970s/1979-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1979-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1979,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1970s/1979-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1979-??_i07",
+    "name": "Unknown — Initial Scan (Issue 7)",
+    "year": 1979,
+    "issue_number": 7,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1970s/1979-07.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1980-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1980,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1980-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1981-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1981,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1981-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1981-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1981,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1981-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1981-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1981,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1981-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1981-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1981,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1981-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1982-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1982,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1982-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1982-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1982,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1982-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1982-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1982,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1982-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1982-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1982,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1982-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1982-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1982,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1982-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1982-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1982,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1982-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1983-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1983,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1983-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1983-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1983,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1983-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1983-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1983,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1983-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1983-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1983,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1983-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1983-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1983,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1983-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1983-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1983,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1983-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1984-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1984,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1984-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1984-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1984,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1984-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1984-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1984,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1984-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1984-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1984,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1984-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1984-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1984,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1984-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1984-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1984,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1984-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1985-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1985,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1985-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1985-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1985,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1985-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1985-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1985,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1985-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1985-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1985,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1985-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1985-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1985,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1985-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1985-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1985,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1985-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1986-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1986,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1986-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1986-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1986,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1986-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1986-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1986,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1986-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1986-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1986,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1986-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1986-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1986,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1986-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1986-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1986,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1986-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1987-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1987,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1987-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1987-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1987,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1987-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1987-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1987,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1987-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1987-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1987,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1987-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1987-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1987,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1987-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1987-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1987,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1987-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1988-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1988,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1988-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1988-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1988,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1988-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1988-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1988,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1988-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1988-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1988,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1988-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1988-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1988,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1988-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1988-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1988,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1988-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1989-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1989,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1989-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1989-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1989,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1989-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1989-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1989,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1989-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1989-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1989,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1989-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1989-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1989,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1989-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1989-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1989,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1980s/1989-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1990-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1990,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1990-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1990-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1990,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1990-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1990-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1990,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1990-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1990-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1990,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1990-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1990-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1990,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1990-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1990-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1990,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1990-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1991-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1991,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1991-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1991-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1991,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1991-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1991-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1991,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1991-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1991-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1991,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1991-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1991-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1991,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1991-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1991-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1991,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1991-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1992-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1992,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1992-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1992-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1992,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1992-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1992-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1992,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1992-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1992-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1992,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1992-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1992-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1992,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1992-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1992-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1992,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1992-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1993-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1993,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1993-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1993-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1993,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1993-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1993-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1993,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1993-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1993-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1993,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1993-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1993-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1993,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1993-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1993-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1993,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1993-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1994-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1994,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1994-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1994-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1994,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1994-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1994-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1994,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1994-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1994-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1994,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1994-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1994-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1994,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1994-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1994-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1994,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1994-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1995-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1995,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1995-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1995-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1995,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1995-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1995-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1995,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1995-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1995-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1995,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1995-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1995-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1995,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1995-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1995-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1995,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1995-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1996-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1996,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1996-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1996-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1996,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1996-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1996-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1996,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1996-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1996-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1996,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1996-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1996-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1996,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1996-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1996-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1996,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1996-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1997-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1997,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1997-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1997-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1997,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1997-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1997-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1997,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1997-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1997-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1997,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1997-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1997-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1997,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1997-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1997-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1997,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1997-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1998-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1998,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1998-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1998-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1998,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1998-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1998-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1998,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1998-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1998-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1998,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1998-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1998-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1998,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1998-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1998-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1998,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1998-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1999-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 1999,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1999-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1999-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 1999,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1999-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1999-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 1999,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1999-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1999-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 1999,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1999-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1999-??_i05",
+    "name": "Unknown — Initial Scan (Issue 5)",
+    "year": 1999,
+    "issue_number": 5,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1999-05.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "1999-??_i06",
+    "name": "Unknown — Initial Scan (Issue 6)",
+    "year": 1999,
+    "issue_number": 6,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/1990s/1999-06.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2000-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 2000,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2000-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2000-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 2000,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2000-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2000-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 2000,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2000-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2001-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 2001,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2001-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2001-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 2001,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2001-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2002-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 2002,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2002-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2002-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 2002,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2002-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2002-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 2002,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2002-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2002-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 2002,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2002-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2003-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 2003,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2003-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2003-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 2003,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2003-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2003-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 2003,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2003-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2003-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 2003,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2003-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2004-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 2004,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2004-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2004-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 2004,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2004-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2006-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 2006,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2006-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2006-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 2006,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2006-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2007-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 2007,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2007-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2007-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 2007,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2007-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2008-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 2008,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2008-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2008-??_i02",
+    "name": "Unknown — Initial Scan (Issue 2)",
+    "year": 2008,
+    "issue_number": 2,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2008-02.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2008-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 2008,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2008-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2008-??_i04",
+    "name": "Unknown — Initial Scan (Issue 4)",
+    "year": 2008,
+    "issue_number": 4,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2008-04.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2009-??_i01",
+    "name": "Unknown — Initial Scan (Issue 1)",
+    "year": 2009,
+    "issue_number": 1,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2009-01.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
+  },
+  {
+    "id": "2009-??_i03",
+    "name": "Unknown — Initial Scan (Issue 3)",
+    "year": 2009,
+    "issue_number": 3,
+    "series_name": "Unknown",
+    "files": {
+      "pdf_initial": "import/initial_scans/2000s/2009-03.pdf"
+    },
+    "status": {
+      "scan_initial": true,
+      "scan_fullsize": false,
+      "scan_archival": false,
+      "transcript_auto": false,
+      "transcript_review1": {
+        "state": "todo"
+      },
+      "transcript_review2": {
+        "state": "todo"
+      },
+      "annotation_people": {
+        "state": "todo"
+      }
+    }
   }
 ]

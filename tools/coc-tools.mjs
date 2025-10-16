@@ -258,7 +258,24 @@ async function indexCommand(){
   for (const init of initials){
     const existing = issues.find(x=> x.year===init.year && (x.files?.pdf_initial === init.path || x.files?.pdf_archival === init.path || x.files?.pdf_fullsize === init.path));
     if (existing) continue;
-    data.conflicts.push({ type:'initial_without_final', year:init.year, n:init.n, file:init.path });
+    // Create placeholder issue for initial-only scans with unknown months
+    const id = `${init.year}-??_i${pad2(init.n)}`;
+    const meta = {
+      year: init.year,
+      months: [],
+      minMonth: null,
+      maxMonth: null,
+      title: 'Unknown',
+      textual: `Initial Scan (Issue ${init.n})`,
+      vol: null,
+      no: init.n,
+      id,
+      code: null,
+      scan_description: null,
+    };
+    const files = { pdf_initial: init.path };
+    const placeholder = makeIssueObject(meta, files);
+    issues.push(placeholder);
   }
 
   const outPath = CONFIG.dest.data_json;
