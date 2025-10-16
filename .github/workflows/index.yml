@@ -16,5 +16,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(data): update newsletters.json"
-          file_pattern: data/newsletters.json data/conflicts.ndjson
-
+          file_pattern: data/newsletters.json
