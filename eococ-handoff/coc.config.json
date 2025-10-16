@@ -1,0 +1,18 @@
+{
+  "src": {
+    "initial_pdfs": [
+      "initial_scans/**/[0-9][0-9][0-9][0-9]/[0-9][0-9][0-9][0-9]-[0-9]*.pdf"
+    ],
+    "final_pdfs": [
+      "final_scans/**/*.pdf"
+    ],
+    "final_mds": [
+      "final_transcripts/**/*.md"
+    ]
+  },
+  "dest": {
+    "newsletters_root": "newsletters",
+    "transcripts_root": "transcripts",
+    "data_json": "data/newsletters.json"
+  }
+}

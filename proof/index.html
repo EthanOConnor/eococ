@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>COC Newsletter Proofing Viewer</title>
+  <style>
+    :root {
+      --gutter: 6px;
+      --bg: #0b0f14;
+      --panel: #0f1621;
+      --text: #e6edf3;
+      --muted: #8aa1b4;
+      --accent: #5eb1ff;
+      --danger: #ff6b6b;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); }
+
+    .toolbar { display: grid; grid-template-columns: 1fr auto auto auto auto; gap: 8px; padding: 10px 12px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); align-items: center; }
+    .toolbar input[type="text"] { width: 100%; padding: 8px 10px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: var(--panel); color: var(--text); }
+    .toolbar .btn { padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: #152031; color: var(--text); cursor: pointer; }
+    .toolbar .btn[aria-pressed="true"] { outline: 2px solid var(--accent); }
+    .toolbar .btn.secondary { background: transparent; }
+
+    .split { display: flex; height: calc(100% - 58px); }
+    .pane { overflow: hidden; position: relative; background: var(--panel); }
+
+    .pdfbar { position: absolute; top: 8px; left: 8px; right: 8px; display: flex; gap: 8px; z-index: 2; }
+    .pdfbar .btn { background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.18); color: var(--text); padding: 6px 10px; border-radius: 8px; }
+    .pdfwrap { position: absolute; inset: 0; }
+    .pdfwrap iframe { width: 100%; height: 100%; border: 0; background: #1a2331; }
+
+    .mdwrap { position: absolute; inset: 0; display: grid; grid-template-rows: auto 1fr; }
+    .mdtabs { display: inline-flex; gap: 6px; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03); }
+    .mdtabs .tab { padding: 6px 10px; border-radius: 8px; cursor: pointer; color: var(--muted); }
+    .mdtabs .tab[aria-selected="true"] { color: var(--text); background: rgba(255,255,255,0.06); }
+
+    .mdcontent { position: relative; overflow: auto; padding: 18px 24px; }
+    .rendered { line-height: 1.55; max-width: 68ch; }
+    pre.raw { white-space: pre-wrap; word-wrap: break-word; font-family: var(--mono); font-size: 14px; background: #0c131d; border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 16px; }
+
+    .gutter { background: transparent; position: relative; }
+    .gutter:after { content: ""; position: absolute; inset: 0; width: 6px; margin: 0 auto; background: rgba(255,255,255,0.08); border-radius: 3px; }
+    .gutter.gutter-horizontal { cursor: col-resize; width: 10px; }
+
+    a, a:visited { color: var(--accent); }
+    .notice { color: var(--muted); font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <input id="mdInput" type="text" placeholder="Markdown URL (relative or absolute)" />
+    <input id="pdfInput" type="text" placeholder="PDF URL" />
+    <button id="loadBtn" class="btn">Load</button>
+    <button id="toggleViewBtn" class="btn" aria-pressed="false" title="Toggle Rendered/Raw (R)">Rendered</button>
+    <a id="openMdLink" class="btn secondary" target="_blank" rel="noopener">Open MD</a>
+  </div>
+
+  <div id="split" class="split">
+    <div id="pdfPane" class="pane">
+      <div class="pdfbar">
+        <button class="btn" id="prevPage">◀ Prev</button>
+        <button class="btn" id="nextPage">Next ▶</button>
+        <button class="btn" id="fitBtn">Fit</button>
+        <a id="openPdfLink" class="btn secondary" target="_blank" rel="noopener">Open PDF</a>
+        <span class="notice" id="pdfNotice"></span>
+      </div>
+      <div class="pdfwrap">
+        <iframe id="pdfFrame" title="PDF viewer"></iframe>
+      </div>
+    </div>
+
+    <div id="mdPane" class="pane">
+      <div class="mdwrap">
+        <div class="mdtabs">
+          <div id="tabRendered" class="tab" role="tab" aria-selected="true">Rendered</div>
+          <div id="tabRaw" class="tab" role="tab" aria-selected="false">Raw</div>
+        </div>
+        <div class="mdcontent">
+          <article id="rendered" class="rendered" hidden></article>
+          <pre id="raw" class="raw" hidden></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@16.4.0/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.11/dist/purify.min.js"></script>
+  <script>
+    const $ = (s) => document.querySelector(s);
+    Split(["#pdfPane", "#mdPane"], { sizes: [50, 50], minSize: 200, gutterSize: 10 });
+
+    const mdInput = $("#mdInput");
+    const pdfInput = $("#pdfInput");
+    const loadBtn = $("#loadBtn");
+    const openMdLink = $("#openMdLink");
+    const openPdfLink = $("#openPdfLink");
+    const pdfFrame = $("#pdfFrame");
+    const pdfNotice = $("#pdfNotice");
+    const rendered = $("#rendered");
+    const raw = $("#raw");
+    const tabRendered = $("#tabRendered");
+    const tabRaw = $("#tabRaw");
+    const toggleViewBtn = $("#toggleViewBtn");
+
+    const qs = new URLSearchParams(location.search);
+    let current = { md: "", pdf: "", page: parseInt(qs.get("page") || "1", 10) };
+    let view = qs.get("view") || "rendered";
+    mdInput.value = qs.get("md") || "";
+    pdfInput.value = qs.get("pdf") || "";
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key.toLowerCase() === "r" && !e.metaKey && !e.ctrlKey) { e.preventDefault(); toggleView(); }
+    });
+    tabRendered.addEventListener("click", () => setView("rendered"));
+    tabRaw.addEventListener("click", () => setView("raw"));
+    toggleViewBtn.addEventListener("click", toggleView);
+    function toggleView(){ setView(view === "rendered" ? "raw" : "rendered"); }
+    function setView(v){
+      view = v;
+      const isRendered = v === "rendered";
+      rendered.hidden = !isRendered; raw.hidden = isRendered;
+      tabRendered.setAttribute("aria-selected", isRendered);
+      tabRaw.setAttribute("aria-selected", !isRendered);
+      toggleViewBtn.textContent = isRendered ? "Rendered" : "Raw";
+      toggleViewBtn.setAttribute("aria-pressed", (!isRendered).toString());
+      const url = new URL(location.href); url.searchParams.set("view", v); history.replaceState({}, "", url);
+    }
+
+    function setPdf(url){
+      current.pdf = url || "";
+      if (!current.pdf) { pdfFrame.removeAttribute("src"); openPdfLink.removeAttribute("href"); return; }
+      const sep = current.pdf.includes("#") ? "&" : "#";
+      const pdfURL = `${current.pdf}${sep}page=${current.page}&zoom=page-fit`;
+      pdfFrame.src = pdfURL; openPdfLink.href = current.pdf;
+      pdfNotice.textContent = "Tip: Built-in viewer supports #page=2 and zoom.";
+    }
+    $("#prevPage").addEventListener("click", () => { if (current.page > 1) { current.page--; setPdf(current.pdf); } });
+    $("#nextPage").addEventListener("click", () => { current.page++; setPdf(current.pdf); });
+    $("#fitBtn").addEventListener("click", () => setPdf(current.pdf));
+
+    async function setMd(url){
+      current.md = url || "";
+      openMdLink.href = current.md || "#";
+      if (!current.md) { rendered.innerHTML = ""; raw.textContent = ""; return; }
+      try {
+        const res = await fetch(current.md, { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const mdText = await res.text();
+        raw.textContent = mdText;
+        const html = marked.parse(mdText, { mangle: false, headerIds: true, gfm: true });
+        const clean = DOMPurify.sanitize(html, { USE_PROFILES: { html: true, svg: true }, ADD_ATTR: ["target", "rel"] });
+        rendered.innerHTML = clean;
+      } catch (err){
+        rendered.innerHTML = `<p style="color: var(--danger)">Failed to load markdown: ${err.message}</p>`;
+        raw.textContent = "";
+      }
+    }
+    loadBtn.addEventListener("click", () => {
+      const md = mdInput.value.trim(); const pdf = pdfInput.value.trim();
+      setMd(md); setPdf(pdf);
+      const url = new URL(location.href);
+      if (md) url.searchParams.set("md", md); else url.searchParams.delete("md");
+      if (pdf) url.searchParams.set("pdf", pdf); else url.searchParams.delete("pdf");
+      history.replaceState({}, "", url);
+    });
+    if (mdInput.value || pdfInput.value){ setMd(mdInput.value); setPdf(pdfInput.value); setView(view); }
+    else { setView(view); }
+  </script>
+</body>
+</html>
+

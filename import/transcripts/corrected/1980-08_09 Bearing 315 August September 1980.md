@@ -1,0 +1,250 @@
+# BEARING 315
+
+_Newsletter of the Cascade Orienteering Club_
+
+## From the President.....page 2
+
+## Editorial Comment.....page 2
+
+## Canada Two-Day Meet.....page 3
+
+## Meet Results.....page 4
+
+## Schedule of Upcoming Events.....page 5
+
+## T-SHIRTS
+
+A new order of club T-shirts are in and will be available for sale at all club meets. The shirts are red with the club distinctive logo in white on the upper left (the wearer's upper left) front side. They are just like the other T-shirts that were for sale. The T-shirts are made of 50% cotton and 50% polyester. They will be available in sizes: S,M,L and XL for $5.00 to COC members and $6.00 to non-members.
+
+## EXAMPLE OF A GREEN COURSE
+
+## A Green Course ?
+For many years throughout the USA and Canada there has been only five different levels of courses that varied in difficulty. They were: the white course for novice orienteers; yellow and orange for intermediate orienteers; red for the women's advanced and blue for the men's advanced. Although our club meets have not included all of these courses, all Class A and most Class B meets include all five levels of courses. These courses are further broken down into age categories for women and men so that anyone can compete in a category that is commensurate with their age and experience level. As orienteers progressed from white to red or blue, the courses increased in both distance and technical difficulty. There has been a growing need to have a technically challenging course that was less physically demanding. As a result, the USOF has proposed a green course be added to the current set of courses and has requested that it be included in all Class A and B meets on an experimental basis. This course is designed to be approximately the same length as the orange course but with the orienteering challenge equal to the red course. The green course is a good idea for those who want the technical challenge of a red course without the physical challenge. After all, that's what orienteering is all about - The Thinking Sport.
+
+<figure>
+<img src="FIXME.JPG" alt="Map of an Example Green Course">
+<figcaption>EXAMPLE OF A GREEN COURSE</figcaption>
+</figure>
+
+## From the President
+
+After our usual summertime lull, we are embarking on an ambitious fall schedule. Our current efforts are geared toward the October 5, Class "B" Regional Meet to be held at Fort Lewis. The map is being completed and we are attempting to find a sponsor. Of course, we will appreciate any ideas and assistance offered for this meet and other events. Also, since the best advertising is by word of mouth, I encourage you to tell a friend about our club. Better yet, bring them to a meet and let them experience our fun sport first hand!
+-- Dave
+
+## Editorial Comment
+
+What happened to the newsletter? Let me explain..... Lorrie O'Brien has been doing our newsletter in addition to being the club Secretary and doing a great job at both. But recently she has been out of town and Dave Enger was looking for someone to help do this issue when I volunteered to do the whole thing. For those who don't know me, I like orienteering and enjoy doing things like newsletters so when this newsletter started to fall together I got carried away and you are reading the outcome. Any comments, suggestions or ideas, whether good or bad, about this newsletter would be greatly appreciated. We will use the information in putting together further newsletters. What will happen to the format and content of future newsletters will depend on your input plus who will continue as editor.
+
+In the meantime, send in your thoughts to the editor in care of the club address. Your ideas are important, so share them with us.
+
+Yours in orienteering,
+Clayton
+
+<figure>
+<img src="FIXME.JPG" alt="Orienteering Cartoon by John Cassady">
+<figcaption>"Maybe I should have approached this control from the other direction." (Cartoon by John Cassady)</figcaption>
+</figure>
+
+## Membership
+
+If you would like to join in the fun and learn more about the sport of orienteering, we would be happy to have you as a member of the Cascade Orienteering Club. Fill in the membership blank below and send with the yearly dues to:
+
+Cascade Orienteering Club
+P.O. Box 3572
+Bellevue, WA 98009
+
+- Family $8.00
+- Individual $5.00
+- Associate (under 18 years) $3.00
+
+Name:
+Address:
+Telephone Number:
+
+## Canada Two-Day Meet
+
+AUGUST 3 and 4
+
+The two-day Class A meet at Merritt, B.C. was well worth the trip. It was a shame more members of COC could not get a day off from work to go. The drive through Canada was beautiful because you had a choice of two different routes, each displaying its own dramatic beauty. One followed a canyon cut by a river while the other went over the Cascades through mountain passes. The route selection afforded the opportunity to drive two completely different ways going up and coming back.
+
+The meet site was even more beautiful with the camp site located on Lundbom Lake right on the edge of the orienteering map. There was a fair amount of animal life to see on the courses and no stinging plants. I was fortunate to be the first one on the course on day two and saw a number of deer and other smaller wildlife in addition to the ever present cattle grazing in the open fields. I could not help wondering what they thought of us as we raced back and forth over the open grassland.
+
+The red and blue courses were a treat as they were designed by a Swedish orienteerer who had visited the OABC earlier in the summer when they were using the same area for a training meet. His courses were challenging and required a variety of orienteering techniques. Several of the legs on both days of the blue course were long (1.8Km and 2.1Km) which afforded the competitors many route options.
+
+The start for both days was within 600 meters of our camp site and the courses finished within 30 meters of our tents. If you want to know about the fun we had between the start and finish, anyone of us who went (Dave Enger, Mike Schuh, Doroth and Clayton Smith) will be more than happy to trade tall tales about a great orienteering meet and some great people. Most enjoyable!!!!
+--Clayton
+
+<figure>
+<img src="FIXME.JPG" alt="1980 Canada 2 Day Blue (1) and Blue (2) Map">
+</figure>
+
+## Meet Results
+
+### Seward Park - August 9, 1980
+
+#### White Course - 6 controls, 1.1 Km
+
+1. Bill Hall                        :21
+2. Harry Morgan                     :22
+3. Sue Lentz / Jessica Rykken       :30
+4. Aaron Tate                       :37
+5. Paul Reese                       :44
+6. Marlys Svensson / Marit Svensson :53
+7. Victor Jocson                    :54
+8. Jason Edwards                   1:02
+9. Carola Burroughs / Cassandra Trimble / Lorna Pauley  1:22
+10. Tony Coutcher                  1:29
+11. David Staub                    1:34
+    Bill Bracken - DNF
+    Mike Mosely - DNF
+
+## Orange Course - 10 controls, 3.1 Km
+
+1. Harry Morgan                     :50
+2. Bill Hall                        :52
+3. Jean Davis                       :57
+4. Debbie Newell                    :59
+5. Bob Barnes                      1:01
+6. Karen Thomson                   1:08
+7. Clyde Laughlin                  1:20
+8. Jeannit Nordholm                1:22
+9. John Svensson / Pat Rahkonen    1:26
+10. Henrik Nordholm                1:32
+11. Aaron Tate                     1:39
+12. Carol Johnson                  1:45
+13. Janice Reynolds / Kai Reynolds 1:50
+14. JoAnne Nivens                  1:54
+15. Debra MacDonald                2:01
+16. Howard Smith                   2:05
+17. Tory Laughlin                  2:12
+18. Bob Hale-Harbaugh              2:18
+19. Brinkerhoffs                   2:26
+20. Fred Warden / Brian Warden / Kathy Edwards 2:31
+21. Sue Lentz / Jessica Rykken     2:39
+22. George Harbaugh                3:05
+Andrew Devore - DNF
+Brady Smith - DNF
+
+## Score Orienteering - 21 controls, 60 min time limit, 1 pt/min overtime penalty. 49 maximum points
+
+1. Goran Larsson                (49-0) 49 pts
+2. Mike Schuh                   (36-0) 36 pts
+3. Richard Lacy                 (34-0) 34 pts
+4. Charlie Bock                 (33-1) 32 pts
+5. Clayton Smith                (36-6) 30 pts
+6. Einor Storakers              (27-0) 27 pts
+7. Greg Konzelman / Dawn Hall   (13-8)  5 pts
+8. Mike Reynolds                (32-32) 0 pts
+ 
+# Carkeek Park - July 12, 1980
+
+## Yellow Course - 8 controls, 2 Km
+
+1. Harry Morgan                 37:05
+2. Janet Wall                   53:40
+3. Marlys Svensson              55:25
+4. Dwight Jacobson              56:20
+5. Dorothy Moushegian           63:30
+6. Jeannit Nordholm             79:50
+7. Dana Ransom                  86:45
+8. The Brinkerhoffs             98:00
+9. David Vondracher / John Vondracher / Maria Delbusto  114:20
+
+## Orange Course - 11 controls, 3 Km
+
+1. Harry Morgan                             46:20
+2. Henrik Nordholm                          55:37
+3. Ben Yang                                 68:47
+4. Einar Svensson / Kraus / Kare Svensson   88:30
+5. Diane Kraus                             101:40
+6. Einar Storakers                         105:43
+7. Gerry Doyle                             136:55
+Harvey Friedman                               DNF
+
+## Red Course - 15 controls, 4.7 Km
+
+1. Clayton Smith                            68:00
+2. Egon Nordholm                            71:50
+3. Greg Konzelman / Joan Konzelman         113:20
+4. Debbie Newell                           151:35
+
+# Fort Lewis - July 27, 1980
+
+## White Course - 7 controls, 2.2 Km
+
+1. Diane Kraus / Lavon Kraus - 45:05
+
+## Orange Course - 9 controls, 3.8 Km
+
+1. Annette Lantz / Berith Larsson           55:00
+2. Jean Davis                               64:32
+3. Bob Barnes                               83:05
+4. Einor Storakers                          89:20
+5. Tom Hardin                               99:46
+6. Carol Johnson                           172:20
+Martha Brinkerhoff                            DNF
+Richard Brinkerhoff                           DNF
+Jeannit Nordholm                              DNF
+
+## Red Course - 15 controls, 6.8 Km
+
+1. Goran Larsson                            55:15
+2. Leif Aspund                              63:30
+3. Dave Enger                               83:11
+4. Tony Paulson                            101:34
+5. Richard Lacy                            105:50
+6. Glen Dudenoir                           118:12
+J. Stone                                       DQ
+Mike Schuh                                    DNF
+Mike Reynolds / Lei Reynolds                  DNF
+Henrik Nordholm                               DNF
+Egun Nordholm                                 DNF
+Joan Konzelman / Greg Konzelman               DNF
+
+<figure>
+<img src="FIXME.JPG" alt="Orienteer and Control Flag Clip-Art">
+</figure>
+
+## Schedule of upcoming events
+
+### THURSDAY, AUGUST 28 - REI ORIENTEERING CLINIC
+
+Goeran Larsson and Dave Enger will give a presentation on the use of the map and compass as well as the sport of orienteering in general. A filmstrip, "Orienteering- What's That?", will be shown. The clinic is open to anyone who is interested in coming, bring a friend and pass the word. The clinic is from 7:00 - 9:00pm at the Seattle REI store located at 1525 11th Avenue.
+
+### SATURDAY, AUGUST 30 - WOODLAND PARK MEET
+
+As a follow up to the REI clinic, field instruction on the use of the map and compass is available in addition to a beginner's and intermediate level courses. For the more advanced orienteerer there will be a map memory course which is a good training method to develop your competitive edge as well as being alot of fun. Starting area is in the picnic area inside the N 50th Street entrance to Lower Woodland Park in Seattle. Registration: 10:00 - 12:00am. Meet director: Goeran Larsson. Color map.
+
+### SATURDAY, SEPTEMBER 13 - ST EDWARDS PARK MEET
+
+Registration: 10:00 - 12:00am. Courses for all levels - Novice, Intermediate & Adv. An orienteering workshop for members of the Mountaineers will be conducted. St Edwards State Park is located on the northeast side of Lake Washington, just south of Kenmore. The park entrance is on Juanita Drive N.E. at NE 145th Street. Come run on a good color map. Meet director: Tony Paulson.
+
+### SATURDAY - SUNDAY, SEPTEMBER 13 and 14 - SAN DIEGO, CALIFORNIA CLASS "B" MEET
+
+The San Diego Orienteering Club in Southern California is hosting a two-day, Class "B" meet. The SOOC is a very large and active orienteering club that has hosted many successful meets. For more information if you are interested in going contact Dave Enger.
+
+### SATURDAY - SUNDAY, SEPTEMBER 6 and 7 - 6th ANNUAL B.C. ORIENTEERING CHAMPIONSHIPS
+
+This two-day meet is an excellent opportunity to attend a well organized competitive orienteering meet. The map is in five-colors 1:10,000 scale with 5m contour interval. Courses are pre-marked on the maps with a map case supplied. Courses will range from White to Blue, separate men and women classes with various age groups (17 total different classes). The Orienteering Association of B.C. is hosting the meet in the Brandywine Falls Provincial Park located on Highway 99 near the Whistler Mt Ski Area about 110 kms north of Vancouver, B.C. The meet begins at 2:00pm on Saturday and 10:00am on Sunday, a schedule which fits the four hour drive from Seattle very nicely. Everyone is welcome, the cost is nominal, but pre-registration is preferred. A group from COC will carpool up and camp overnight Saturday. If you are interested contact Dave Enger for more info.
+
+### SATURDAY, SEPTEMBER 20 - Possible CLE ELUM MEET
+
+Permission has been granted to use a ranch and some adjacent property which is excellent orienteering terrain. COC would like to hold a joint meet with the Ellensburg Orienteering Club, but the details still are being worked out. Contact Dave Enger or Len Englund for more information.
+
+### SUNDAY, OCTOBER 5 - FORT LEWIS CLASS "B" MEET
+
+Our second Class "B" meet will be held at Fort Lewis on a new five-color, 1:15,000 map. Five courses will be set; White, Yellow, Orange, Red and Blue. For more information see the next issue of the newsletter, to be mailed first class on September 16. Meet Director: Clayton Smith.
+
+### MONDAY, OCTOBER 13 - CLUB BUSINESS MEETING
+
+The meeting will begin at 7:00pm in the Greenlake Library at 7364 E. Greenlake Drive N. in Seattle. Anyone interested in attending is welcome.
+
+### SATURDAY - SUNDAY, OCTOBER 18 and 19 - U.S. ORIENTEERING CHAMPIONSHIPS (CLASS "A") ***
+
+St Louis Orienteering Club, St Louis, MO.
+
+### SATURDAY - SUNDAY, NOVEMBER 1 and 2 - NORTH AMERICAN ORIENTEERING CHAMPIONSHIPS (CLASS "A" MEET) ***
+
+Cleveland, Ohio hosted by the Northeast Ohio Orienteering Club. 
+
+*** Contact Dave Enger (or any other member of USOF) for information on these meets. Several COC members are planning to go to these meets You do not have to be competing for the championship titles to attend or enjoy these meets. They are alot of fun and a good chance to meet and develop orienteering friends from across the USA, Canada and other countries. If you like orienteering they are well worth the trip. See you there.

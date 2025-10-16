@@ -1,0 +1,68 @@
+# Bearing 315
+February 1979
+CASCADE ORIENTEERING CLUB
+* **President**: Mike Sherman (322 9018)
+* **Vice President**: Karl Nolte (632 5559)
+* **Secretary**: Jean Hendrickson (772 1241)
+* **Treasurer**: Corrie Fiedler (322 9018)
+* **Publicity**: Dave Enger (455 5320)
+* **Membership**: Tom Stewart (1-964 4309)
+* **Training**: Len Englund (746 3822)
+* **Events**: (Events)
+
+## Greetings
+We have just held our Annual Meeting and the results of the election of officers are listed above. We had a fair number attend the meeting and we covered a lot of ground. Besides the election of officers, we approved the purchase of some new control points and punches and also a second training compass. The Hendricksons have offered a First Aid Kit to be used at meets until we can decide just how big a kit we'll need. We also voted to accept a couple of requests by the Boy Scouts for Orienteering programs they have asked us about setting up. One of the requests is for help this summer and we will undertake it as a club and hope that more members will feel more at ease with their knowledge of the sport of Orienteering as the year progresses and can help out in the program. The office of Secretary is still open at this time as will be the Training Coordinator when Tom Stewart leaves the office in June. We hope to fill these positions soon with your help.
+
+## EVENTS
+As previously announced, Corrie Fiedler and Mike Sherman will conduct a Map & Compass session at Discovery Park in Seattle on Saturday, Feb. 24, at 10am in the Administration Building. This will be a basic course and we invite anyone to attend. There is no charge so come on over and bring a compass if you have one.
+
+Sunday, Feb. 25, Tom Stewart will be directing a fairly basic meet at Fort Lewis. This will be in connection with a three day seminar at P.L.U. in Tacoma, sponsored by the Presidents' Council on Physical Fitness. This event is open to everyone, but there will be a $1.00 fee for anyone not connected with the Seminar. The course will be located in the Chambers Lake area, an area we have used before. It is located about 2½ miles N.E. of Roy, Washington on Highway 507. The meet will begin at 10am. There are NO restrooms and NO water, so come prepared. (From Seattle travel South on I-5 to the Highway 512 exit and then East to Hwy 7. South on Hwy 7 through Spanaway to the Hwy 507 turnoff. Take a right and follow 507 for 5 miles. The turnoff will be marked with control points. The drive is about 1 hour from Seattle.)
+
+Next month on Sunday, Mar. 18, Tom will again be director of a meet at Fort Lewis. This meet will be in a new area for us. It will also begin at 10am and we will meet at the Historic Gate (just inside the main gate... Exit 120 off I-5) at 9:30am and drive about 10 miles to the site. Please be on time at the meeting point. This meet will have a $1.00 fee and will be another basic, or starter, course. There are NO restrooms or water at this site either. (For those interested in driving down as a group, we will meet at the N.E. corner of the Southcenter parking lot at the Seafirst Bank at 8:30 and depart shortly thereafter.)
+
+## MEETINGS
+Our next club meeting will be held at 7:30pm in the Auditorium of the Puget Power Building in Bellevue on Monday, Mar. 12th. This will be the first meeting held under our new officers so let's see a big turnout. We will be setting up a training and events schedule for the coming months at this meeting. If you would like to help plan the future of our club and its activities, please plan to attend.
+
+## DUES
+One last reminder to those of you who joined the club before JUNE 30, 1978: Your dues are due for the coming year! The $4.00 for a single, $7.00 for a family, membership fee per year helps the club continue. As a member you will receive the newsletter and get a cut-rate at our larger meets. Please use the form in this newsletter to pay your dues and to let us know how you would like to aid the club in the coming year.
+
+<figure>
+<img src="photo.jpg" alt="FIXME: Photo"> 
+<figcaption>The Cascade OC Logo</figcaption>
+</figure>
+
+## Membership Information
+* **Individual**: $4
+* **Family**: $7
+
+---
+
+The **Cascade Orienteering Club** is now in its third year and continues to grow. If you would like to join in the fun and learn this sport, we would be happy to have you as a member. We are also looking for help on all our committees, and if you would let us know your interests, we would be happy to let you know how you could help. Orienteering is the thinking sport...
+
+**Interests**:
+* [ ] Publicity
+* [ ] Training
+* [ ] Events (mapping, site selection)
+* [ ] Newsletter
+
+---
+
+Cascade Orienteering Club
+P.O. Box 3572
+Bellevue, WA 98009
+
+**Name**:
+
+**Address**:
+
+**Phone**:
+# Helpful Hint
+For the beginner: Orienteering often takes you "off the beaten path". For that reason, it is a good idea to bring along an extra pair of shoes, socks, and even pants to change into after an outdoor meet. Water, juice, and some type of light food is also a good idea to have along in the car. A plastic "zip lock" bag for your map in wet weather is great. Besides a map and compass, a whistle is a good investment. Orienteering is a fun sport and a healthy one, but it is also the thinking sport, so plan ahead and you will enjoy it all the more.
+
+See you at the next meet,   
+*Karl*
+
+<figure>
+<img src="photo.jpg" alt="FIXME: Photo"> 
+<figcaption>Orienteering crossword illustration</figcaption>
+</figure>

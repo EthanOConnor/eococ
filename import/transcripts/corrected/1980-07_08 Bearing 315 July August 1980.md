@@ -1,0 +1,78 @@
+## Cascade Orienteering Club
+## Bearing 315
+Newsletter July-August 1980
+
+## Club Officers
+
+**President:**  
+Dave Enger: 455-5320, 789-4137
+
+**Vice-President:**  
+Charlie Bock: 641-4791
+
+**Secretary:**  
+Lorrie O'Brien: 746-4573
+
+**Treasurer:**  
+Jean Hendrickson: 772-1241
+
+**Events:**  
+Len Englund: 746-3822
+
+**Publicity:**  
+Tony Paulson: 784-4649
+
+**Membership:**  
+Mike Schuh: 783-3960
+
+**Mapping:**  
+Goeran Larsson: 938-2058
+
+**Training:**  
+Darcy & Debbie MacDonald: 823-9337
+
+## Membership
+
+To join the Cascade Orienteering Club, fill in the membership form and send it with the yearly dues to:
+
+Cascade Orienteering Club  
+P.O. Box 3572  
+Bellevue, Wash. 98009
+
+Dues:
+- Family: $8.00
+- Individual: $5.00
+- Associate (under 18 yrs): $3.00
+
+## From The President
+Our Fun Trek 8 orienteering meet at Seward Park on May 31st was a huge success. The meet was our biggest and best organized ever, and went very smoothly. We had about 120 participants, more than twice as many as any previous meet, and all appeared to enjoy themselves. I was particularly pleased that we attracted so many people from other clubs, as you can see from the results list. I talked with many of them and we are developing more participation in other clubs' events, notably the British Columbia and Ellensburg clubs.
+
+Much of the credit for the "Fun Trek '80" success should go to our co-sponsor, Eddie Bauer. They provided advance publicity, general organization, facilities for the clinics, map printing, insurance coverage, refreshments, and excellent prizes.
+
+I would like to thank those club members who spent many hours working on the "Fun Trek '80" events. First of all, Len Englund, who dreamed up and initiated the program, coordinated with Eddie Bauer, Inc., and provided motivation throughout. Many thanks also to Charlie Bock for single-handedly creating the superb Seward Park map and designing and setting the four excellent courses. Tony Paulson coordinated the publicity and conducted the Discovery Park workshop. Clayton Smith conducted two of the in-store clinics, and Bo Powell conducted the lunch hour clinic and helped with training at several events.
+
+Thanks also to Mike Schuh, who built the start and finish frames, directed the Discovery Park meet, and controlled the timing at the Seward Park meet. At the Seward Park meet, Bob Hale-Harbaugh was the starter, Jean and Bob Hendrickson handled registration, Carol Johnson, Lorrie O’Brien, Savitri Khalsa, and Debbie Newell did recording and results checking/posting. Einer Storackers and Richard Lacy performed the strenuous task of circulating around the Seward Park courses throughout the day-long meet checking control markers. In fact, Richard accomplished a new feat in orienteering, an "Orienteering Century"—he "punched in" at about 100 controls.  
+-*Dave*
+
+## Coming Events
+
+**Saturday, July 12 - CARKEEK PARK MEET**  
+Enter the park via the N.W. 110th St. at 3rd Ave. N.W. in Seattle. Join us anytime between 10 AM and 12 Noon at the picnic area overlooking Puget Sound near the end of the loop road. Meet director: Dave Enger will set beginners' and intermediate point-to-point courses and a 60-minute score orienteering course.
+
+**Sunday, July 13 - NORTH VANCOUVER, B.C. MEET**  
+The North Vancouver Orienteers club will hold a meet at Black Mountain, a winter ski area just outside North Vancouver, starting about 11 AM. The Canadians have been practicing orienteering longer than us and have developed good maps and conduct well-organized meets. Contact Dave Enger or Goeran Larsson for more info.
+
+**Sunday, July 21 - FORT LEWIS MEET**  
+Registration will be from 11 AM to 1 PM in the southeastern area of Fort Lewis on the east side of Highway 507 about 2.5 miles north of Roy. From Seattle, take exit 127 off I-5, head east on Highway 512 for 2 miles, then exit onto Highway 7 southbound toward Mt. Rainier. After 5 mi., turn right onto Highway 507 and continue for 5 mi. to the red/white orienteering signs indicating a left turn into the site. For carpooling: meet in the Sea-First Natl Bank parking lot on the Northeast corner of Southcenter Shopping Center at 9:30 AM. We will use Clayton Smith's 1:10,000 map and set a variety of courses.
+
+**Saturday, August 2 and Sunday, August 3 - MERRITT, B.C. MEET**  
+A two-day meet sponsored by the Valley Navigators, a small orienteering club, at the site of last year's B.C. Orienteering championships. Contact Dave Enger for further info.
+
+**Wednesday, August 6 - CLUB BUSINESS MEETING**  
+Meeting will start at 7 PM at the Greenlake Library, 7364 E. Greenlake Dr. North, in Seattle. We will discuss our next regional meet, which will probably be held at Fort Lewis in September.
+
+**Saturday, August 9 - SEWARD PARK MEET**  
+Register between 10 AM and 12 Noon at the park. Meet director: Richard Lacey. All levels of courses available.
+
+**Saturday, August 16 and Sunday, August 17 - SAN DIEGO MEET**  
+The San Diego Orienteering Club will sponsor a two-day meet—one of the bigger events on the U.S. west coast this year. Contact Dave Enger for info.

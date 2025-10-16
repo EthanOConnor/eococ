@@ -1,0 +1,95 @@
+# BEARING 315
+_August/September 1979_
+
+## CASCADE ORIENTEERING CLUB 
+
+- President: Mike Fiedler (322 9018)
+- Vice President: Karl Holte (632 5559)
+- Secretary: Office open
+- Treasurer: Jean Hendrickson (722 1241)
+- Publicity: Corrie Fiedler (322 9018)
+- Membership: Dave Enger (455 5320)
+- Training: Office open
+- Events: Len Englund (746 3822)
+
+## Greetings
+
+Orienteering, unlike most participatory sports, requires a large backup staff. In fact, the support of an Orienteering Club is nearly essential in order to develop a map library and organize/staff Orienteering meets. With the loss of Tom Stewart's excellent talents as Training Director of the COC (Tom was transferred to Hawaii), the COC now has two open offices: secretary and training director. This understaffing is putting real strains on the present officers in order to sponsor even a minimal number of meets in addition to taking care of day-to-day organizational tasks.
+
+What this is all leading to, of course, is that the club is in need of support. Some of the specifics that need to be done within the next few months are:
+
+a. Obtain meet schedules from other nearby Orienteering clubs (Eugene, OR, Moscow, ID, etc.)  
+b. Make minor map corrections (mostly trail changes) on our new Seward Park map.  
+c. Obtain a map of the University of Washington arboretum for canoe orienteering.  
+d. Begin the organization of a Trim Orienteering course in a city park with a sponsor (we have several ideas).  
+e. Obtain a map of St. Edwards Seminary and check for orienteering suitability.  
+f. Organize an Orienteering course through the University of Washington experimental college.  
+g. Take responsibility for scheduling 'entertainment' (film, speaker, etc.) after each COC meeting (we have several ideas).
+
+Give me a call if you can help out the COC by working on one of the above assignments. We must have more member participation in the running of the Cascade Orienteering Club if it is to continue as an active Orienteering Club.
+
+## EVENTS
+
+- Since the last newsletter, the COC sponsored two training events and two orienteering events.
+  - On June 23-24, Len Englund and Einar Storakers set up a professional-looking booth at the Eddie Bauer Outdoor Awareness Fair at Bellevue Square. The COC was able to have someone at the booth during the two-day event, and we helped a number of people gain familiarity with the sport of Orienteering.
+  - Tony Paulsen and Charlie Bock were meet directors for the June 30 meet at Seward Park. Tony and Charlie set up an advanced 'score orienteering' meet which, unfortunately, was scheduled for a rainy, windy day (yes, on June 30!). The weather caused such a low turnout that the meet will be run again in the fall.
+
+### SCORE MEET
+
+1. David Larson (40 points)
+2. Corrie Fiedler (15 points)
+3. Mike Fiedler (11 points)
+
+- COC held its annual picnic in association with an orienteering meet and a bon voyage party for Tom and Annette Stewart at the Chambers Lake Area of Ft. Lewis on July 15. Tom set up a beginners course and an intermediate score orienteering course. After the meet was completed, we drove to the Stewarts' home on Ft. Lewis for a hot dog and beer bash. Here, a note of appreciation and a Lifetime membership to the COC were presented to the Stewarts. The intermediate score orienteering course again showed that 'orienteering is for everyone' as Elnar and Corrie beat the best of the club's young competitive orienteers.
+
+### SCORE ORIENTEERING (300 points possible)
+
+1. Elnar Storakers (188 points)
+2. Corrie Fiedler (185 points)
+3. Dave Enger (160 points)
+4. Mike Fiedler (150 points)
+5. Tony Paulson (67 points)
+6. Goran Larsson (60 points)
+
+### WHITE COURSE (2300 meters, 7 points)
+
+1. Berith Larsson (60 minutes)
+2. Debbie and Gary MacDonald (88 minutes)
+3. Hendricksons (90 minutes)
+4. Len Englund, Jim Bratt, and John Elizabeth Yates (106 minutes)
+
+## COC SHORTS
+
+- WE'RE FAMOUS: G.S. Khalsa, who has attended several meets with COC member Savitra Khalsa, is a writer for UPI. A recent article he wrote about the Cascade Orienteering Club was published in the South Bend, Ind. Tribune, featuring quotes by Mike Sherman, Tom Stewart, and Bob Hendrickson.
+
+## COMING EVENTS
+
+**_NOTE CHANGES IN DATES AND TIMES_**
+
+**August 13**  
+7 pm - 7:30 pm  
+August business meeting at the Greenlake Library. At 7 pm, we will have a short discussion on the sport of Orienteering for newcomers. The meeting will start at 7:30 pm and will be followed by a slide show by Mike Fiedler. The slides are a series depicting a typical Orienteering meet and were put together to introduce newcomers to the sport.
+
+**August 23**  
+7 pm  
+Karl Nolte will present *ORIENTEERING I - INTRODUCTION TO ORIENTEERING* as a lecture in the REI Co-op Clinic Series. The lecture is free and is held in the lecture room (upstairs) in the REI retail store (1525 11th Avenue, Seattle).
+
+**August 30**  
+7 pm  
+Karl Nolte will present *ORIENTEERING II - FINDING YOUR DIRECTION* in the REI Co-op Clinic Series. See above for details.
+
+**September 8**  
+10 am  
+Beginners training event at Woodland Park, Seattle. This is planned as a follow-up to the REI Clinic Series on Orienteering, but is appropriate for all who are new to the sport. Contact Karl Nolte (632 5559) for further information.
+
+**September 16**  
+10 am  
+Beginners and intermediate meet in Area 33 at Ft. Lewis. Meet in the town of Rainier at 10 am. Meet director: Einar Storakers. Driving instructions: From Seattle, drive S on I-5 to Hwy 512 exit south of Tacoma. Drive 2 miles E on 512, then turn S on Hwy 7 and drive 5 miles. Bear right on Hwy 507 toward Roy and drive 18 miles into Rainier. Driving time is 70 minutes.
+
+~~**October 13**~~**September 30**
+10 am  
+Beginners and intermediate meet at Seward Park. Follow the red/white markers up the hill to the registration area.
+
+**Mon. Oct. 8**
+7:30 pm
+Meeting - Green Lake Library

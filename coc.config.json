@@ -1,0 +1,25 @@
+{
+  "src": {
+    "initial_pdfs": [
+      "import/initial_scans/*/[0-9][0-9][0-9][0-9]-[0-9][0-9].{pdf,PDF}",
+      "initial_scans/**/[0-9][0-9][0-9][0-9]/[0-9][0-9][0-9][0-9]-[0-9]*.{pdf,PDF}"
+    ],
+    "fullsize_pdfs": [
+      "import/fullsize_scans/**/*.{pdf,PDF}"
+    ],
+    "final_pdfs": [
+      "import/archival_scans/**/*.{pdf,PDF}",
+      "final_scans/**/*.{pdf,PDF}"
+    ],
+    "final_mds": [
+      "import/transcripts/corrected/**/*.md",
+      "final_transcripts/**/*.md"
+    ]
+  },
+  "dest": {
+    "newsletters_root": "newsletters",
+    "transcripts_root": "newsletters/transcripts",
+    "data_json": "data/newsletters.json"
+  }
+}
+

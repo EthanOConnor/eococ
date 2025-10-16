@@ -1,0 +1,19 @@
+name: Build newsletters index
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci || npm i
+      - run: node tools/coc-tools.mjs index --config coc.config.json
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): update newsletters.json"
+          file_pattern: data/newsletters.json data/conflicts.ndjson

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1987-11",
+    "name": "Cascade Orienteer — November 1987",
+    "year": 1987,
+    "month": 11,
+    "declared_date_start": "1987-11-01",
+    "declared_date_end": "1987-11-30",
+    "volume": 12,
+    "issue_number": 9,
+    "files": {
+      "pdf": "/newsletters/1987/1987-11/scan_initial.pdf",
+      "pdf_fullsize": "/newsletters/1987/1987-11/scan_fullsize.pdf",
+      "pdf_archival": "/newsletters/1987/1987-11/scan_archival.pdf",
+      "md": "/newsletters/transcripts/1987/1987-11_Cascade-Orienteer.md"
+    },
+    "status": {
+      "physical_on_hand": true,
+      "scan_initial": true,
+      "scan_fullsize": true,
+      "scan_archival": false,
+      "transcript_auto": true,
+      "transcript_review1": { "state": "done" },
+      "transcript_review2": { "state": "in_progress" },
+      "annotation_people": false
+    }
+  },
+  {
+    "id": "1991-03",
+    "name": "Cascade Orienteer — March 1991",
+    "year": 1991,
+    "month": 3,
+    "declared_date_start": "1991-03-01",
+    "declared_date_end": "1991-03-31",
+    "volume": 16,
+    "issue_number": 3,
+    "files": {
+      "pdf": "/newsletters/1991/1991-03/scan_initial.pdf",
+      "md": "/newsletters/transcripts/1991/1991-03_Cascade-Orienteer.md"
+    },
+    "status": {
+      "physical_on_hand": true,
+      "scan_initial": true,
+      "scan_archival": true,
+      "transcript_auto": true,
+      "transcript_review1": true,
+      "transcript_review2": true,
+      "annotation_people": { "state": "in_progress" }
+    }
+  }
+]
+

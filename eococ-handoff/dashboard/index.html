@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>COC Newsletter Project Dashboard</title>
+  <style>
+    :root{
+      --bg:#0b0f14;--panel:#0f1621;--panel-2:#101826;--text:#e6edf3;--muted:#8aa1b4;--accent:#5eb1ff;--ok:#1fbf75;--warn:#ffcc66;--err:#ff6b6b;--chip:#1a2433;
+      --mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans:system-ui,-apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:var(--sans)}
+    .wrap{display:grid;grid-template-rows:auto auto 1fr;gap:10px;padding:14px}
+    .toolbar{display:grid;grid-template-columns:1fr auto auto auto;gap:8px;align-items:center}
+    .toolbar input, .toolbar select{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:var(--panel);color:var(--text)}
+    .btn{padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#152031;color:var(--text);cursor:pointer}
+    .btn.secondary{background:transparent}
+    .panels{display:grid;grid-template-columns: 2.2fr 1fr;gap:12px;min-height:60vh}
+    .card{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden}
+    .card h3{margin:0;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.03)}
+    .content{padding:12px}
+    .grid{width:100%;border-collapse:collapse}
+    .grid th,.grid td{padding:8px 10px;border-bottom:1px solid rgba(255,255,255,.06);text-align:left;font-size:14px}
+    .grid th{color:var(--muted);font-weight:600}
+    .grid tr:hover{background:rgba(255,255,255,.03)}
+    .progress{height:10px;background:#0c131d;border-radius:6px;overflow:hidden}
+    .progress>i{display:block;height:100%;background:linear-gradient(90deg,var(--ok),#49a7ff)}
+    .chips{display:flex;flex-wrap:wrap;gap:6px}
+    .chip{background:var(--chip);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:4px 8px;font-size:12px;color:var(--muted)}
+    .status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--warn)}
+    .status-dot.ok{background:var(--ok)}
+    .status-dot.err{background:var(--err)}
+    .filters{display:flex;flex-wrap:wrap;gap:8px}
+    .filters .group{display:flex;gap:6px;align-items:center;background:var(--panel-2);border:1px solid rgba(255,255,255,.08);padding:8px 10px;border-radius:12px}
+    .small{font-size:12px;color:var(--muted)}
+    .sticky{position:sticky;top:0;background:var(--panel);z-index:1}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .kpi{background:var(--panel-2);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:10px}
+    .kpi .num{font-size:24px;font-weight:700}
+    .kbd{font-family:var(--mono);font-size:12px;background:#0c131d;border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:2px 6px}
+    .foot{color:var(--muted);font-size:12px;margin-top:8px}
+    @media (max-width:1100px){ .panels{grid-template-columns:1fr} .kpis{grid-template-columns:repeat(2,1fr)} }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="Search title, volume, year, month, people… (⌘/Ctrl+K)" />
+    <select id="filterDecade"><option value="">All decades</option></select>
+    <select id="filterMonth"><option value="">All months</option></select>
+    <button id="btnSuggest" class="btn">Suggest Campaigns</button>
+  </div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="panels">
+    <div class="card">
+      <h3 class="sticky">Issues <span class="small" id="count"></span></h3>
+      <div class="content" style="padding:0">
+        <table class="grid" id="table">
+          <thead>
+            <tr>
+              <th>Issue</th>
+              <th>Declared Dates</th>
+              <th>Vol/No</th>
+              <th>Status</th>
+              <th>Progress</th>
+              <th>Files</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Project Overview</h3>
+      <div class="content">
+        <canvas id="chart1" height="220"></canvas>
+        <div class="foot">Charts summarize the filtered set. Use decade/month filters to focus efforts.</div>
+        <hr style="border-color:rgba(255,255,255,.06)"/>
+        <div id="suggestions"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">Data source: <span id="dataSrc" class="kbd"></span>. Configure with <span class="kbd">?data=/data/newsletters.json</span>. Weights editable in-page.</div>
+</div>
+
+<!-- No-build dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+
+<script>
+// ---------- Config ----------
+const DEFAULT_DATA_URL = new URLSearchParams(location.search).get('data') || '/data/newsletters.json';
+// Stage weights sum to 100
+const STAGE_WEIGHTS = {
+  physical_on_hand: 5,
+  scan_initial: 10,
+  scan_archival: 15,
+  transcript_auto: 10,
+  transcript_review1: 20,
+  transcript_review2: 20,
+  annotation_people: 10,
+  annotation_places: 5,
+  annotation_events: 5,
+};
+
+// ---------- Utilities ----------
+const $ = (s)=>document.querySelector(s);
+const fmtPct = (n)=> (Math.round(n)).toString()+"%";
+const monthName = (m)=> new Date(2000, (m||1)-1, 1).toLocaleString(undefined,{month:'short'});
+const escape = (s)=> s.replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+
+function progressFromStatus(st){
+  if (!st) return 0;
+  let total = 0;
+  for (const [k,w] of Object.entries(STAGE_WEIGHTS)){
+    const v = st[k];
+    // allow boolean true/false or {state:"done"|"in_progress"|"todo"}
+    const state = (typeof v === 'object' && v)? v.state : (v? 'done':'todo');
+    const frac = state==='done'?1: state==='in_progress'?0.5: 0;
+    total += w*frac;
+  }
+  return total;
+}
+
+function statusChip(state){
+  const cls = state==='done'?'ok': state==='in_progress'?'' : 'err';
+  const label = state==='done'? 'done' : state==='in_progress'? 'in progress' : 'todo';
+  return `<span class="chip"><i class="status-dot ${cls}"></i>${label}</span>`
+}
+
+// ---------- Data Load (with fallback sample) ----------
+async function loadData(){
+  $('#dataSrc').textContent = DEFAULT_DATA_URL;
+  try{
+    const res = await fetch(DEFAULT_DATA_URL, {cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const json = await res.json();
+    return Array.isArray(json)? json : json.issues;
+  }catch(e){
+    console.warn('Using sample data because load failed:', e);
+    return SAMPLE;
+  }
+}
+
+// ---------- Render ----------
+let ISSUES = [];
+let filtered = [];
+let chart;
+
+function buildFilters(){
+  const decades = [...new Set(ISSUES.map(x=> Math.floor((x.year||new Date(x.declared_date_start||x.declared_date_end).getFullYear())/10)*10 ))].filter(Boolean).sort((a,b)=>a-b);
+  const sel = $('#filterDecade');
+  sel.innerHTML = '<option value="">All decades</option>' + decades.map(d=>`<option value="${d}">${d}s</option>`).join('');
+  const selM = $('#filterMonth');
+  selM.innerHTML = '<option value="">All months</option>' + Array.from({length:12},(_,i)=>`<option value="${i+1}">${monthName(i+1)}</option>`).join('');
+}
+
+function applyFilters(){
+  const q = $('#search').value.trim().toLowerCase();
+  const decade = $('#filterDecade').value;
+  const month = $('#filterMonth').value;
+  filtered = ISSUES.filter(x=>{
+    const inSearch = !q || (`${x.name} ${x.volume||''} ${x.issue_number||''} ${x.year||''} ${x.month||''}`.toLowerCase().includes(q));
+    const d = Math.floor((x.year||new Date(x.declared_date_start||x.declared_date_end).getFullYear())/10)*10;
+    const inDec = !decade || d == parseInt(decade,10);
+    const inMonth = !month || (x.month && x.month == parseInt(month,10));
+    return inSearch && inDec && inMonth;
+  });
+  $('#count').textContent = `${filtered.length} result${filtered.length===1?'':'s'}`;
+  renderTable();
+  renderKPIs();
+  renderChart();
+  suggestCampaigns();
+}
+
+function renderTable(){
+  const tb = $('#tbody');
+  tb.innerHTML = filtered.map(x=>{
+    const start = x.declared_date_start? new Date(x.declared_date_start): null;
+    const end = x.declared_date_end? new Date(x.declared_date_end): null;
+    const dateTxt = start && end ? `${start.toLocaleDateString()} – ${end.toLocaleDateString()}` : (start? start.toLocaleDateString(): (x.year? `${monthName(x.month||1)} ${x.year}`:''));
+    const st = x.status||{};
+    const p = progressFromStatus(st);
+    const vols = `${x.volume??''}${x.issue_number? ('/'+x.issue_number): ''}`;
+    const files = [`pdf`,`pdf_archival`,`md`].map(k=> x.files?.[k] ? `<a class="chip" href="${x.files[k]}" target="_blank" rel="noopener">${k.toUpperCase()}</a>`: '').join(' ');
+
+    const critical = ['scan_archival','transcript_review2'];
+    const stateCrit = critical.map(k=> {const v=st[k]; const s=(typeof v==='object'&&v)?v.state:(v? 'done':'todo'); return s;});
+    const rowWarn = stateCrit.includes('todo');
+
+    return `<tr${rowWarn? ' style="background:rgba(255,107,107,0.05)"':''}>
+      <td><div style="font-weight:600">${escape(x.name||`Issue ${x.id}`)}</div><div class="small">${x.id||''}</div></td>
+      <td>${dateTxt||''}</td>
+      <td>${escape(vols)}</td>
+      <td class="chips">
+        <span class="chip">Physical ${statusChip((st.physical_on_hand&& (typeof st.physical_on_hand==='object'? st.physical_on_hand.state: (st.physical_on_hand? 'done':'todo')))||'todo')}</span>
+        <span class="chip">Scan ${statusChip(st.scan_initial?.state || (st.scan_initial? 'done':'todo'))}</span>
+        <span class="chip">Archival ${statusChip(st.scan_archival?.state || (st.scan_archival? 'done':'todo'))}</span>
+        <span class="chip">Auto-Tx ${statusChip(st.transcript_auto?.state || (st.transcript_auto? 'done':'todo'))}</span>
+        <span class="chip">Review1 ${statusChip(st.transcript_review1?.state || (st.transcript_review1? 'done':'todo'))}</span>
+        <span class="chip">Review2 ${statusChip(st.transcript_review2?.state || (st.transcript_review2? 'done':'todo'))}</span>
+        <span class="chip">NER:People ${statusChip(st.annotation_people?.state || (st.annotation_people? 'done':'todo'))}</span>
+      </td>
+      <td style="min-width:160px">
+        <div class="progress" title="${fmtPct(p)}">
+          <i style="width:${Math.max(2,p)}%"></i>
+        </div>
+        <div class="small">${fmtPct(p)}</div>
+      </td>
+      <td>${files}</td>
+    </tr>`
+  }).join('');
+}
+
+function renderKPIs(){
+  const total = filtered.length;
+  const sumP = filtered.reduce((a,x)=>a+progressFromStatus(x.status||{}),0);
+  const avg = total? sumP/total : 0;
+  function countDone(key){
+    return filtered.reduce((a,x)=>{
+      const v = x.status?.[key];
+      const s = (typeof v==='object'&&v)? v.state : (v? 'done':'todo');
+      return a + (s==='done');
+    },0);
+  }
+  const kpis = $('#kpis');
+  kpis.innerHTML = `
+    <div class="kpi"><div class="small">Issues (filtered)</div><div class="num">${total}</div></div>
+    <div class="kpi"><div class="small">Avg Progress</div><div class="num">${fmtPct(avg)}</div></div>
+    <div class="kpi"><div class="small">Fully Reviewed (R2)</div><div class="num">${countDone('transcript_review2')}</div></div>
+    <div class="kpi"><div class="small">Archival Scans</div><div class="num">${countDone('scan_archival')}</div></div>`;
+}
+
+function renderChart(){
+  const ctx = $('#chart1');
+  const byStage = Object.keys(STAGE_WEIGHTS).map(k=>({
+    stage:k, done: filtered.reduce((a,x)=>{
+      const v=x.status?.[k]; const s=(typeof v==='object'&&v)?v.state:(v? 'done':'todo'); return a+(s==='done');
+    },0)
+  }));
+  const labels = byStage.map(x=>x.stage.replace(/_/g,' '));
+  const data = byStage.map(x=>x.done);
+  if (chart){ chart.destroy(); }
+  chart = new Chart(ctx, {type:'bar', data:{labels, datasets:[{label:'Done (count)', data}]}, options:{plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#9fb1c4'}},y:{ticks:{color:'#9fb1c4'}}}}});
+}
+
+function suggestCampaigns(){
+  const el = $('#suggestions');
+  if (!filtered.length){ el.innerHTML = '<div class="small">No data to suggest from.</div>'; return; }
+  // Example campaigns
+  const nov80s = filtered.filter(x=> (x.month===11) && (Math.floor((x.year||0)/10)===1980));
+  const needsR2 = filtered.filter(x=>{
+    const v=x.status?.transcript_review2; const s=(typeof v==='object'&&v)?v.state:(v? 'done':'todo'); return s!=='done';
+  });
+  const needsArchival = filtered.filter(x=>{
+    const v=x.status?.scan_archival; const s=(typeof v==='object'&&v)?v.state:(v? 'done':'todo'); return s!=='done';
+  });
+  function block(title, arr){
+    return `<div class="card" style="margin-bottom:10px">
+      <h3>${title}</h3>
+      <div class="content">
+        <div class="small">${arr.length} issue(s)</div>
+        <div class="chips" style="margin-top:8px">${arr.slice(0,12).map(x=>`<span class="chip">${escape(x.id||x.name)}</span>`).join('')}${arr.length>12? '…':''}</div>
+      </div>
+    </div>`
+  }
+  el.innerHTML = block('🏁 Campaign: Finish Review 2 for the filtered set', needsR2)
+              + block('📚 Campaign: Produce Archival Scans for the filtered set', needsArchival)
+              + block('🍂 Campaign: Annotate all November issues in the 1980s (within filter)', nov80s);
+}
+
+// ---------- Wire up ----------
+$('#search').addEventListener('input', applyFilters);
+$('#filterDecade').addEventListener('change', applyFilters);
+$('#filterMonth').addEventListener('change', applyFilters);
+$('#btnSuggest').addEventListener('click', ()=>{
+  const s = document.querySelector('#suggestions');
+  s.style.display = (s.style.display==='none')? 'block':'none';
+});
+
+// Keyboard focus (⌘/Ctrl+K)
+window.addEventListener('keydown', (e)=>{
+  if ((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==='k'){ e.preventDefault(); $('#search').focus(); }
+});
+
+// ---------- Boot ----------
+let SAMPLE = [
+  {
+    id:"1987-11",
+    name:"Cascade Orienteer — November 1987",
+    year:1987, month:11,
+    declared_date_start:"1987-11-01", declared_date_end:"1987-11-30",
+    volume:12, issue_number:9,
+    files:{ pdf:"/newsletters/1987/11.pdf", pdf_archival:"/newsletters/1987/11-archival.pdf", md:"/newsletters/1987/11.md" },
+    status:{ physical_on_hand:true, scan_initial:true, scan_archival:false, transcript_auto:true, transcript_review1:{state:'done', by:'Alice'}, transcript_review2:{state:'in_progress', by:'Bob'}, annotation_people:false }
+  },
+  {
+    id:"1991-03",
+    name:"Cascade Orienteer — March 1991",
+    year:1991, month:3,
+    declared_date_start:"1991-03-01", declared_date_end:"1991-03-31",
+    volume:16, issue_number:3,
+    files:{ pdf:"/newsletters/1991/03.pdf", md:"/newsletters/1991/03.md" },
+    status:{ physical_on_hand:true, scan_initial:true, scan_archival:true, transcript_auto:true, transcript_review1:true, transcript_review2:true, annotation_people:{state:'in_progress'} }
+  }
+];
+
+(async function(){
+  ISSUES = await loadData();
+  buildFilters();
+  applyFilters();
+})();
+</script>
+</body>
+</html>

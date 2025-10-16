@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "scripts": {
+    "index": "node tools/coc-tools.mjs index --config coc.config.json",
+    "migrate": "node tools/coc-tools.mjs migrate --config coc.config.json --dry-run",
+    "migrate:exec": "node tools/coc-tools.mjs migrate --config coc.config.json --execute"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0"
+  }
+}
