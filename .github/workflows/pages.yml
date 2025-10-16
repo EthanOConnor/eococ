@@ -1,0 +1,58 @@
+name: Deploy static site
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run index
+      - name: Prepare site artifact
+        run: |
+          mkdir -p public
+          cp -R dashboard proof data newsletters public/
+          if [ -d import ]; then cp -R import public/; fi
+          cat <<'EOF' > public/index.html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; URL=dashboard/index.html" />
+    <title>COC Newsletter Explorer</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="dashboard/index.html">dashboard</a>…</p>
+  </body>
+</html>
+EOF
+          cp public/index.html public/404.html
+      - uses: actions/upload-pages-artifact@v2
+        with:
+          path: public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v2

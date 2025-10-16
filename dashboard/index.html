@@ -91,7 +91,28 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
 <script>
-const DEFAULT_DATA_URL = new URLSearchParams(location.search).get('data') || '/data/newsletters.json';
+const DATA_PARAM = new URLSearchParams(location.search).get('data');
+const PATH_MATCH = location.pathname.match(/^(.*)\/dashboard\/index\.html$/);
+const SITE_BASE = PATH_MATCH ? PATH_MATCH[1] : '';
+const BASE_URL = `${location.origin}${SITE_BASE ? SITE_BASE + '/' : '/'}`;
+
+const isAbsoluteUrl = (p)=> /^(?:[a-z]+:)?\/\//i.test(p);
+const toAbsolute = (p)=>{
+  if (!p) return null;
+  if (isAbsoluteUrl(p)) return p;
+  const cleaned = p.replace(/^\/+/, '');
+  return new URL(cleaned, BASE_URL).href;
+};
+const displayPath = (p)=>{
+  if (!p) return '';
+  if (isAbsoluteUrl(p)) return p;
+  const cleaned = p.replace(/^\/+/, '');
+  const prefix = SITE_BASE ? SITE_BASE + '/' : '';
+  return `${prefix}${cleaned}`;
+};
+
+const DEFAULT_DATA_URL = toAbsolute(DATA_PARAM || 'data/newsletters.json');
+const DATA_LABEL = displayPath(DATA_PARAM || 'data/newsletters.json');
 let usingSampleData = false;
 // Stage weights now include scan_fullsize
 const STAGE_WEIGHTS = {
@@ -130,7 +151,7 @@ function statusChip(state){
 }
 
 async function loadData(){
-  $('#dataSrc').textContent = DEFAULT_DATA_URL;
+  $('#dataSrc').textContent = DATA_LABEL;
   try{
     const res = await fetch(DEFAULT_DATA_URL, {cache:'no-store'});
     if(!res.ok) throw new Error('HTTP '+res.status);
@@ -151,7 +172,7 @@ function updateSampleBanner(error){
   if (!banner) return;
   if (usingSampleData){
     const reason = error?.message ? ` (reason: ${error.message})` : '';
-    banner.innerHTML = `⚠️ Using sample data. Could not load <span class="kbd">${DEFAULT_DATA_URL}</span>${reason}. Serve this page via HTTP and add <span class="kbd">?data=/data/newsletters.json</span> to view live project data.`;
+    banner.innerHTML = `⚠️ Using sample data. Could not load <span class="kbd">${DATA_LABEL}</span>${reason}. Serve this page via HTTP or GitHub Pages and, if needed, call this page with <span class="kbd">?data=data/newsletters.json</span> to use project data.`;
     banner.style.display = 'block';
   } else {
     banner.style.display = 'none';
@@ -161,14 +182,15 @@ function updateSampleBanner(error){
 
 function buildProofLink(issue){
   if (!issue) return null;
-  const md = issue.files?.md;
-  const pdf = issue.files?.pdf_fullsize || issue.files?.pdf_archival || issue.files?.pdf || issue.files?.pdf_initial;
+  const md = issue.files?.md ? toAbsolute(issue.files.md) : null;
+  const pdfPath = issue.files?.pdf_fullsize || issue.files?.pdf_archival || issue.files?.pdf || issue.files?.pdf_initial;
+  const pdf = pdfPath ? toAbsolute(pdfPath) : null;
   if (!md && !pdf) return null;
-  const params = new URLSearchParams();
-  if (md) params.set('md', md);
-  if (pdf) params.set('pdf', pdf);
-  if (!params.has('view')) params.set('view','rendered');
-  return `/proof/index.html?${params.toString()}`;
+  const proofUrl = new URL('proof/index.html', BASE_URL);
+  if (md) proofUrl.searchParams.set('md', md);
+  if (pdf) proofUrl.searchParams.set('pdf', pdf);
+  if (!proofUrl.searchParams.has('view')) proofUrl.searchParams.set('view','rendered');
+  return proofUrl.href;
 }
 
 let ISSUES = [];
@@ -202,7 +224,10 @@ function renderTable(){
     const dateTxt = start && end ? `${start.toLocaleDateString()} – ${end.toLocaleDateString()}` : (start? start.toLocaleDateString(): (x.year? `${monthName(x.month||1)} ${x.year}`:''));
     const st = x.status||{}; const p = progressFromStatus(st);
     const vols = `${x.volume??''}${x.issue_number? ('/'+x.issue_number): ''}`;
-    const files = [`pdf`,`pdf_fullsize`,`pdf_archival`,`md`].map(k=> x.files?.[k] ? `<a class="chip" href="${x.files[k]}" target="_blank" rel="noopener">${k.toUpperCase().replace('_',' ')}</a>`: '').join(' ');
+    const files = [`pdf`,`pdf_fullsize`,`pdf_archival`,`md`].map(k=> {
+      const href = x.files?.[k] ? toAbsolute(x.files[k]) : null;
+      return href ? `<a class="chip" href="${href}" target="_blank" rel="noopener">${k.toUpperCase().replace('_',' ')}</a>` : '';
+    }).join(' ');
     const critical = ['scan_archival','transcript_review2'];
     const stateCrit = critical.map(k=> {const v=st[k]; const s=(typeof v==='object'&&v)?v.state:(v? 'done':'todo'); return s;});
     const rowWarn = stateCrit.includes('todo');

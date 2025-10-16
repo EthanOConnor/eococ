@@ -98,6 +98,26 @@
     const $ = (s) => document.querySelector(s);
     const markedLib = (typeof window !== "undefined" && window.marked) ? window.marked : (typeof marked !== "undefined" ? marked : null);
     const domPurifyLib = (typeof window !== "undefined" && window.DOMPurify) ? window.DOMPurify : (typeof DOMPurify !== "undefined" ? DOMPurify : null);
+    const PATH_MATCH = location.pathname.match(/^(.*)\/proof\/index\.html$/);
+    const SITE_BASE = PATH_MATCH ? PATH_MATCH[1] : '';
+    const BASE_URL = `${location.origin}${SITE_BASE ? SITE_BASE + '/' : '/'}`;
+    const isAbsoluteUrl = (p)=> /^(?:[a-z]+:)?\/\//i.test(p);
+    const toAbsolute = (p)=>{
+      if (!p) return null;
+      if (isAbsoluteUrl(p)) return p;
+      const cleaned = p.replace(/^\/+/, '');
+      return new URL(cleaned, BASE_URL).href;
+    };
+    const toInputValue = (p)=>{
+      if (!p) return '';
+      if (isAbsoluteUrl(p)){
+        if (p.startsWith(BASE_URL)) return p.slice(BASE_URL.length);
+        if (p.startsWith(location.origin)) return p.slice(location.origin.length);
+        return p;
+      }
+      const cleaned = p.replace(/^\/+/, '');
+      return cleaned;
+    };
     Split(["#pdfPane", "#mdPane"], { sizes: [50, 50], minSize: 200, gutterSize: 10 });
 
     const mdInput = $("#mdInput");
@@ -116,8 +136,10 @@
     const qs = new URLSearchParams(location.search);
     let current = { md: "", pdf: "", page: parseInt(qs.get("page") || "1", 10) };
     let view = qs.get("view") || "rendered";
-    mdInput.value = qs.get("md") || "";
-    pdfInput.value = qs.get("pdf") || "";
+    const mdParam = qs.get("md") || "";
+    const pdfParam = qs.get("pdf") || "";
+    mdInput.value = toInputValue(mdParam);
+    pdfInput.value = toInputValue(pdfParam);
 
     document.addEventListener("keydown", (e) => {
       if (e.key.toLowerCase() === "r" && !e.metaKey && !e.ctrlKey) { e.preventDefault(); toggleView(); }
@@ -139,11 +161,12 @@
 
     function setPdf(url){
       current.pdf = url || "";
-      if (!current.pdf) { pdfFrame.removeAttribute("src"); openPdfLink.removeAttribute("href"); return; }
-      const sep = current.pdf.includes("#") ? "&" : "#";
-      const pdfURL = `${current.pdf}${sep}page=${current.page}&zoom=page-fit`;
-      pdfFrame.src = pdfURL; openPdfLink.href = current.pdf;
-      pdfNotice.textContent = "Tip: Built-in viewer supports #page=2 and zoom.";
+      const absolute = toAbsolute(url);
+      if (!absolute) { pdfFrame.removeAttribute("src"); openPdfLink.removeAttribute("href"); return; }
+      const base = absolute.split("#")[0];
+      const pdfURL = `${base}#page=${current.page}&zoom=page-fit`;
+      pdfFrame.src = pdfURL; openPdfLink.href = absolute;
+      pdfNotice.textContent = "Tip: Open PDF in a new tab if browser controls feel cramped.";
     }
     $("#prevPage").addEventListener("click", () => { if (current.page > 1) { current.page--; setPdf(current.pdf); } });
     $("#nextPage").addEventListener("click", () => { current.page++; setPdf(current.pdf); });
@@ -151,10 +174,11 @@
 
     async function setMd(url){
       current.md = url || "";
-      openMdLink.href = current.md || "#";
-      if (!current.md) { rendered.innerHTML = ""; raw.textContent = ""; return; }
+      const absolute = toAbsolute(url);
+      openMdLink.href = absolute || "#";
+      if (!absolute) { rendered.innerHTML = ""; raw.textContent = ""; return; }
       try {
-        const res = await fetch(current.md, { cache: "no-store" });
+        const res = await fetch(absolute, { cache: "no-store" });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const mdText = await res.text();
         raw.textContent = mdText;
@@ -176,7 +200,7 @@
       if (pdf) url.searchParams.set("pdf", pdf); else url.searchParams.delete("pdf");
       history.replaceState({}, "", url);
     });
-    if (mdInput.value || pdfInput.value){ setMd(mdInput.value); setPdf(pdfInput.value); setView(view); }
+    if (mdParam || pdfParam){ setMd(mdParam); setPdf(pdfParam); setView(view); }
     else { setView(view); }
   </script>
 </body>
