@@ -1,17 +1,21 @@
 {
   "src": {
     "initial_pdfs": [
+      "newsletters/*/*/scan_initial.pdf",
       "import/initial_scans/*/[0-9][0-9][0-9][0-9]-[0-9][0-9].{pdf,PDF}",
       "initial_scans/**/[0-9][0-9][0-9][0-9]/[0-9][0-9][0-9][0-9]-[0-9]*.{pdf,PDF}"
     ],
     "fullsize_pdfs": [
+      "newsletters/*/*/scan_fullsize.pdf",
       "import/fullsize_scans/**/*.{pdf,PDF}"
     ],
     "final_pdfs": [
+      "newsletters/*/*/scan_archival.pdf",
       "import/archival_scans/**/*.{pdf,PDF}",
       "final_scans/**/*.{pdf,PDF}"
     ],
     "final_mds": [
+      "newsletters/transcripts/**/*.md",
       "import/transcripts/corrected/**/*.md",
       "final_transcripts/**/*.md"
     ]
@@ -22,4 +26,3 @@
     "data_json": "data/newsletters.json"
   }
 }
-
