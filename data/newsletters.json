@@ -10,9 +10,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1978-01_02 Bearing 315 January February 1978 Volume 1 Number 1 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1978-01_02 Bearing 315 January February 1978 Volume 1 Number 1.md",
-      "pdf_initial": "import/initial_scans/1970s/1978-01.pdf"
+      "pdf_fullsize": "newsletters/1978/1978-01_02/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1978/1978-01_02_Bearing-315.md",
+      "pdf_initial": "newsletters/1978/1978-01_02/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -41,9 +41,9 @@
     "series_name": "Cascade Orienteering Club Winter Schedule 1978",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1978-12_01_02_COCWS Cascade Orienteering Club Winter Schedule 1978 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1978-12_01_02_COCWS Cascade Orienteering Club Winter Schedule 1978.md",
-      "pdf_initial": "import/initial_scans/1970s/1978-01.pdf"
+      "pdf_fullsize": "newsletters/1978/1978-01_12/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1978/1978-01_12_Cascade-Orienteering-Club-Winter-Schedule-1978.md",
+      "pdf_initial": "newsletters/1978/1978-01_12/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -72,9 +72,9 @@
     "series_name": "Cascade Orienteering Club Newsletter",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1978-05_COCN Cascade Orienteering Club Newsletter May 1978 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1978-05_COCN Cascade Orienteering Club Newsletter May 1978.md",
-      "pdf_initial": "import/initial_scans/1970s/1978-03.pdf"
+      "pdf_fullsize": "newsletters/1978/1978-05/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1978/1978-05_Cascade-Orienteering-Club-Newsletter.md",
+      "pdf_initial": "newsletters/1978/1978-05/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -102,9 +102,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1978-06 Bearing 315 June 1978 Volume I Number 3 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1978-06 Bearing 315 June 1978 Volume I Number 3.md",
-      "pdf_initial": "import/initial_scans/1970s/1978-06.pdf"
+      "pdf_fullsize": "newsletters/1978/1978-06/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1978/1978-06_Bearing-315.md",
+      "pdf_initial": "newsletters/1978/1978-06/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -132,9 +132,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1978-07 Bearing 315 July 1978 Volume I Number 4 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1978-07 Bearing 315 July 1978 Volume I Number 4.md",
-      "pdf_initial": "import/initial_scans/1970s/1978-04.pdf"
+      "pdf_fullsize": "newsletters/1978/1978-07/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1978/1978-07_Bearing-315.md",
+      "pdf_initial": "newsletters/1978/1978-07/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -162,9 +162,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1979-02 Bearing 315 February 1979 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1979-02 Bearing 315 February 1979.md",
-      "pdf_initial": "import/initial_scans/1970s/1979-02.pdf"
+      "pdf_fullsize": "newsletters/1979/1979-02/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1979/1979-02_Bearing-315.md",
+      "pdf_initial": "newsletters/1979/1979-02/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -192,9 +192,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1979-03_04 Bearing 315 March April 1979 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1979-03_04 Bearing 315 March April 1979.md",
-      "pdf_initial": "import/initial_scans/1970s/1979-03.pdf"
+      "pdf_fullsize": "newsletters/1979/1979-03_04/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1979/1979-03_04_Bearing-315.md",
+      "pdf_initial": "newsletters/1979/1979-03_04/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -222,9 +222,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1979-05_06 Bearing 315 May June 1979 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1979-05_06 Bearing 315 May June 1979.md",
-      "pdf_initial": "import/initial_scans/1970s/1979-05.pdf"
+      "pdf_fullsize": "newsletters/1979/1979-05_06/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1979/1979-05_06_Bearing-315.md",
+      "pdf_initial": "newsletters/1979/1979-05_06/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -252,9 +252,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1979-06_07 Bearing 315 June July 1979 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1979-06_07 Bearing 315 June July 1979.md",
-      "pdf_initial": "import/initial_scans/1970s/1979-06.pdf"
+      "pdf_fullsize": "newsletters/1979/1979-06_07/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1979/1979-06_07_Bearing-315.md",
+      "pdf_initial": "newsletters/1979/1979-06_07/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -282,9 +282,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1979-08_09 Bearing 315 August September 1979 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1979-08_09 Bearing 315 August September 1979.md",
-      "pdf_initial": "import/initial_scans/1970s/1979-05.pdf"
+      "pdf_fullsize": "newsletters/1979/1979-08_09/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1979/1979-08_09_Bearing-315.md",
+      "pdf_initial": "newsletters/1979/1979-08_09/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -312,9 +312,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1979-10_11 Bearing 315 October November 1979 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1979-10_11 Bearing 315 October November 1979.md",
-      "pdf_initial": "import/initial_scans/1970s/1979-06.pdf"
+      "pdf_fullsize": "newsletters/1979/1979-10_11/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1979/1979-10_11_Bearing-315.md",
+      "pdf_initial": "newsletters/1979/1979-10_11/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -342,9 +342,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1979-11_12 Bearing 315 November December 1979 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1979-11_12 Bearing 315 November December 1979.md",
-      "pdf_initial": "import/initial_scans/1970s/1979-06.pdf"
+      "pdf_fullsize": "newsletters/1979/1979-11_12/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1979/1979-11_12_Bearing-315.md",
+      "pdf_initial": "newsletters/1979/1979-11_12/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -372,9 +372,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1980-01_02 Bearing 315 January February 1980 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1980-01_02 Bearing 315 January February 1980.md",
-      "pdf_initial": "import/initial_scans/1980s/1980-01.pdf"
+      "pdf_fullsize": "newsletters/1980/1980-01_02/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1980/1980-01_02_Bearing-315.md",
+      "pdf_initial": "newsletters/1980/1980-01_02/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -402,9 +402,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1980-03_04 Bearing 315 March April 1980 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1980-03_04 Bearing 315 March April 1980.md",
-      "pdf_initial": "import/initial_scans/1980s/1980-03.pdf"
+      "pdf_fullsize": "newsletters/1980/1980-03_04/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1980/1980-03_04_Bearing-315.md",
+      "pdf_initial": "newsletters/1980/1980-03_04/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -432,9 +432,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1980-04_05 Bearing 315 April May 1980 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1980-04_05 Bearing 315 April May 1980.md",
-      "pdf_initial": "import/initial_scans/1980s/1980-04.pdf"
+      "pdf_fullsize": "newsletters/1980/1980-04_05/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1980/1980-04_05_Bearing-315.md",
+      "pdf_initial": "newsletters/1980/1980-04_05/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -462,9 +462,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1980-06 Bearing 315 June 1980 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1980-06 Bearing 315 June 1980.md",
-      "pdf_initial": "import/initial_scans/1980s/1980-06.pdf"
+      "pdf_fullsize": "newsletters/1980/1980-06/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1980/1980-06_Bearing-315.md",
+      "pdf_initial": "newsletters/1980/1980-06/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -492,9 +492,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1980-07_08 Bearing 315 July August 1980 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1980-07_08 Bearing 315 July August 1980.md",
-      "pdf_initial": "import/initial_scans/1980s/1980-07.pdf"
+      "pdf_fullsize": "newsletters/1980/1980-07_08/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1980/1980-07_08_Bearing-315.md",
+      "pdf_initial": "newsletters/1980/1980-07_08/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -522,9 +522,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1980-08_09 Bearing 315  August September 1980 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1980-08_09 Bearing 315 August September 1980.md",
-      "pdf_initial": "import/initial_scans/1980s/1980-08.pdf"
+      "pdf_fullsize": "newsletters/1980/1980-08_09/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1980/1980-08_09_Bearing-315.md",
+      "pdf_initial": "newsletters/1980/1980-08_09/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -552,9 +552,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1980-09_10 Bearing 315 September October 1980 300dpi Color Raw Scan.pdf",
-      "md": "import/transcripts/corrected/1980-09_10 Bearing 315 September October 1980.md",
-      "pdf_initial": "import/initial_scans/1980s/1980-05.pdf"
+      "pdf_fullsize": "newsletters/1980/1980-09_10/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1980/1980-09_10_Bearing-315.md",
+      "pdf_initial": "newsletters/1980/1980-09_10/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,
@@ -582,9 +582,9 @@
     "series_name": "Bearing 315",
     "scan_description": "300dpi Color Raw Scan(1)",
     "files": {
-      "pdf_fullsize": "import/fullsize_scans/1980-11_12 Bearing 315 November December 1980 300dpi Color Raw Scan(1).pdf",
-      "md": "import/transcripts/corrected/1980-11_12 Bearing 315 November December 1980.md",
-      "pdf_initial": "import/initial_scans/1980s/1980-06.pdf"
+      "pdf_fullsize": "newsletters/1980/1980-11_12/scan_fullsize.pdf",
+      "md": "newsletters/transcripts/1980/1980-11_12_Bearing-315.md",
+      "pdf_initial": "newsletters/1980/1980-11_12/scan_initial.pdf"
     },
     "status": {
       "scan_initial": true,

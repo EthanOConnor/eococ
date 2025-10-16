@@ -12,6 +12,7 @@
     .toolbar input, .toolbar select{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:var(--panel);color:var(--text)}
     .btn{padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#152031;color:var(--text);cursor:pointer}
     .btn.secondary{background:transparent}
+    .banner{display:none;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,107,107,.35);background:rgba(255,107,107,.12);color:#ffd8d8;margin-bottom:8px;font-size:13px;line-height:1.4}
     .panels{display:grid;grid-template-columns: 2.2fr 1fr;gap:12px;min-height:60vh}
     .card{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden}
     .card h3{margin:0;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.03)}
@@ -47,6 +48,8 @@
     <select id="filterMonth"><option value="">All months</option></select>
     <button id="btnSuggest" class="btn">Suggest Campaigns</button>
   </div>
+
+  <div id="sampleBanner" class="banner"></div>
 
   <div class="kpis" id="kpis"></div>
 
@@ -87,6 +90,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
 <script>
 const DEFAULT_DATA_URL = new URLSearchParams(location.search).get('data') || '/data/newsletters.json';
+let usingSampleData = false;
 // Stage weights now include scan_fullsize
 const STAGE_WEIGHTS = {
   physical_on_hand: 5,
@@ -125,8 +129,32 @@ function statusChip(state){
 
 async function loadData(){
   $('#dataSrc').textContent = DEFAULT_DATA_URL;
-  try{ const res = await fetch(DEFAULT_DATA_URL, {cache:'no-store'}); if(!res.ok) throw new Error('HTTP '+res.status); const json = await res.json(); return Array.isArray(json)? json : json.issues; }
-  catch(e){ console.warn('Using sample data because load failed:', e); return SAMPLE; }
+  try{
+    const res = await fetch(DEFAULT_DATA_URL, {cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const json = await res.json();
+    usingSampleData = false;
+    updateSampleBanner();
+    return Array.isArray(json)? json : json.issues;
+  }catch(e){
+    console.warn('Using sample data because load failed:', e);
+    usingSampleData = true;
+    updateSampleBanner(e);
+    return SAMPLE;
+  }
+}
+
+function updateSampleBanner(error){
+  const banner = $('#sampleBanner');
+  if (!banner) return;
+  if (usingSampleData){
+    const reason = error?.message ? ` (reason: ${error.message})` : '';
+    banner.innerHTML = `⚠️ Using sample data. Could not load <span class="kbd">${DEFAULT_DATA_URL}</span>${reason}. Serve this page via HTTP and add <span class="kbd">?data=/data/newsletters.json</span> to view live project data.`;
+    banner.style.display = 'block';
+  } else {
+    banner.style.display = 'none';
+    banner.textContent = '';
+  }
 }
 
 let ISSUES = [];
@@ -228,4 +256,3 @@ let SAMPLE = [
 </script>
 </body>
 </html>
-
