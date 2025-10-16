@@ -30,7 +30,6 @@ jobs:
         run: |
           mkdir -p public
           cp -R dashboard proof data newsletters public/
-          if [ -d import ]; then cp -R import public/; fi
           cp index.html public/index.html
           cp 404.html public/404.html
           cp .nojekyll public/.nojekyll
