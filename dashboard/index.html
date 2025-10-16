@@ -13,6 +13,8 @@
     .btn{padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#152031;color:var(--text);cursor:pointer}
     .btn.secondary{background:transparent}
     .banner{display:none;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,107,107,.35);background:rgba(255,107,107,.12);color:#ffd8d8;margin-bottom:8px;font-size:13px;line-height:1.4}
+    .issue-link{color:inherit;text-decoration:none}
+    .issue-link:hover{text-decoration:underline;color:var(--accent)}
     .panels{display:grid;grid-template-columns: 2.2fr 1fr;gap:12px;min-height:60vh}
     .card{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden}
     .card h3{margin:0;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.03)}
@@ -157,6 +159,18 @@ function updateSampleBanner(error){
   }
 }
 
+function buildProofLink(issue){
+  if (!issue) return null;
+  const md = issue.files?.md;
+  const pdf = issue.files?.pdf_fullsize || issue.files?.pdf_archival || issue.files?.pdf || issue.files?.pdf_initial;
+  if (!md && !pdf) return null;
+  const params = new URLSearchParams();
+  if (md) params.set('md', md);
+  if (pdf) params.set('pdf', pdf);
+  if (!params.has('view')) params.set('view','rendered');
+  return `/proof/index.html?${params.toString()}`;
+}
+
 let ISSUES = [];
 let filtered = [];
 let chart;
@@ -192,8 +206,11 @@ function renderTable(){
     const critical = ['scan_archival','transcript_review2'];
     const stateCrit = critical.map(k=> {const v=st[k]; const s=(typeof v==='object'&&v)?v.state:(v? 'done':'todo'); return s;});
     const rowWarn = stateCrit.includes('todo');
+    const proofLink = buildProofLink(x);
+    const title = escape(x.name||`Issue ${x.id}`);
+    const issueTitleHtml = proofLink ? `<a class="issue-link" href="${proofLink}" target="_blank" rel="noopener">${title}</a>` : title;
     return `<tr${rowWarn? ' style="background:rgba(255,107,107,0.05)"':''}>
-      <td><div style="font-weight:600">${escape(x.name||`Issue ${x.id}`)}</div><div class="small">${x.id||''}</div></td>
+      <td><div style="font-weight:600">${issueTitleHtml}</div><div class="small">${x.id||''}</div></td>
       <td>${dateTxt||''}</td>
       <td>${escape(vols)}</td>
       <td class="chips">
