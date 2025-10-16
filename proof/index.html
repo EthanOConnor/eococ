@@ -19,7 +19,7 @@
 
     html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); }
 
-    .toolbar { display: grid; grid-template-columns: 1fr auto 1fr auto auto auto; gap: 8px; padding: 10px 12px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); align-items: center; }
+    .toolbar { display: grid; grid-template-columns: 1fr auto auto 1fr auto auto auto; gap: 8px; padding: 10px 12px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); align-items: center; }
     .toolbar input[type="text"] { width: 100%; padding: 8px 10px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: var(--panel); color: var(--text); }
     .toolbar .btn { padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: #152031; color: var(--text); cursor: pointer; }
     .toolbar .btn[aria-pressed="true"] { outline: 2px solid var(--accent); }
@@ -64,6 +64,7 @@
       <a id="openPdfLink" class="btn secondary" target="_blank" rel="noopener">Open PDF</a>
       <span class="notice" id="pdfNotice"></span>
     </div>
+    <a id="openDashboard" class="btn secondary">Dashboard</a>
     <input id="mdInput" type="text" placeholder="Markdown URL (right pane)" />
     <button id="toggleViewBtn" class="btn" aria-pressed="false" title="Toggle Rendered/Raw (R)">Rendered</button>
     <a id="openMdLink" class="btn secondary" target="_blank" rel="noopener">Open MD</a>
@@ -125,6 +126,7 @@
     const loadBtn = $("#loadBtn");
     const openMdLink = $("#openMdLink");
     const openPdfLink = $("#openPdfLink");
+    const openDashboardLink = $("#openDashboard");
     const pdfFrame = $("#pdfFrame");
     const pdfNotice = $("#pdfNotice");
     const rendered = $("#rendered");
@@ -140,6 +142,8 @@
     const pdfParam = qs.get("pdf") || "";
     mdInput.value = toInputValue(mdParam);
     pdfInput.value = toInputValue(pdfParam);
+    const dashboardUrl = new URL('dashboard/index.html', BASE_URL).href;
+    if (openDashboardLink) openDashboardLink.href = dashboardUrl;
 
     document.addEventListener("keydown", (e) => {
       if (e.key.toLowerCase() === "r" && !e.metaKey && !e.ctrlKey) { e.preventDefault(); toggleView(); }

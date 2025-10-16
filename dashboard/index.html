@@ -233,7 +233,7 @@ function renderTable(){
     const rowWarn = stateCrit.includes('todo');
     const proofLink = buildProofLink(x);
     const title = escape(x.name||`Issue ${x.id}`);
-    const issueTitleHtml = proofLink ? `<a class="issue-link" href="${proofLink}" target="_blank" rel="noopener">${title}</a>` : title;
+    const issueTitleHtml = proofLink ? `<a class="issue-link" href="${proofLink}">${title}</a>` : title;
     return `<tr${rowWarn? ' style="background:rgba(255,107,107,0.05)"':''}>
       <td><div style="font-weight:600">${issueTitleHtml}</div><div class="small">${x.id||''}</div></td>
       <td>${dateTxt||''}</td>
